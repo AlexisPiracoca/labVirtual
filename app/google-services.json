@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "65610868310",
+    "project_id": "labvirtual-9c13b",
+    "storage_bucket": "labvirtual-9c13b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:65610868310:android:eebabdcc1d1547720a3df7",
+        "android_client_info": {
+          "package_name": "com.usta.laboratoriovirtual"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB8Vw-HDuIWY9uRsYaal5GIMPV7CrSQhyE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
