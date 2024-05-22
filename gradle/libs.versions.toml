@@ -18,6 +18,8 @@ navigationUiKtx = "2.6.0"
 compose = "1.2.1"
 composePreviewRenderer = "0.0.1-alpha01"
 firebaseAuthKtx = "23.0.0"
+googleGmsGoogleServices = "4.4.1"
+firebaseVertexai = "16.0.0-beta01"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -44,10 +46,12 @@ androidx-navigation-ui-ktx = { group = "androidx.navigation", name = "navigation
 androidx-compose-ui = { module = "androidx.compose.ui:ui", version.ref = "compose" }
 compose-preview-renderer = { group = "com.android.tools.compose", name = "compose-preview-renderer", version.ref = "composePreviewRenderer" }
 firebase-auth-ktx = { group = "com.google.firebase", name = "firebase-auth-ktx", version.ref = "firebaseAuthKtx" }
+firebase-vertexai = { group = "com.google.firebase", name = "firebase-vertexai", version.ref = "firebaseVertexai" }
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }
 jetbrainsKotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+googleGmsGoogleServices = { id = "com.google.gms.google-services", version.ref = "googleGmsGoogleServices" }
 
 [bundles]
 compose = ["androidx-compose-ui"]

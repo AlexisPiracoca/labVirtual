@@ -1,46 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
+
     <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:icon="@drawable/aula"
+        android:label="Aulas Virtuales"
+        android:roundIcon="@drawable/aula"
         android:supportsRtl="true"
         android:theme="@style/Theme.LaboratorioVirtual"
         tools:targetApi="31">
         <activity
+            android:name=".chat.ChatScreen"
+            android:exported="false"
+            android:theme="@style/Theme.LaboratorioVirtual" />
+        <activity
             android:name=".classDifferential.LaplaceClassScreen"
             android:exported="false"
-            android:label="@string/title_activity_laplace_class"
             android:theme="@style/Theme.LaboratorioVirtual" />
         <activity
             android:name=".classDifferential.MinMaxClassScreen"
             android:exported="false"
-            android:label="@string/title_activity_min_max_class"
             android:theme="@style/Theme.LaboratorioVirtual" />
         <activity
             android:name=".classDifferential.BasicClassScreen"
             android:exported="false"
-            android:label="@string/title_activity_basic_class"
             android:theme="@style/Theme.LaboratorioVirtual" />
         <activity
             android:name=".classProgramming.EstructureClassScreen"
             android:exported="false"
-            android:label="@string/title_activity_estructure_class"
             android:theme="@style/Theme.LaboratorioVirtual" />
         <activity
             android:name=".classProgramming.PooClassScreen"
             android:exported="false"
-            android:label="@string/title_activity_poo_class"
             android:theme="@style/Theme.LaboratorioVirtual" />
         <activity
             android:name=".menu.MenuScreen"
             android:exported="false"
-            android:label="@string/title_activity_menu"
             android:theme="@style/Theme.LaboratorioVirtual" />
         <activity
             android:name=".classRoom.DifferentialEquationsScreen"
@@ -54,7 +54,6 @@
         <activity
             android:name=".MainActivity"
             android:exported="true"
-            android:label="@string/app_name"
             android:theme="@style/Theme.LaboratorioVirtual">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

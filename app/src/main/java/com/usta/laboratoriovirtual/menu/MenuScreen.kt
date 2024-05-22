@@ -10,12 +10,9 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.Row
-import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
-import androidx.compose.foundation.layout.offset
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.rememberScrollState
@@ -51,6 +48,7 @@ import com.google.firebase.Firebase
 import com.google.firebase.auth.auth
 import com.usta.laboratoriovirtual.MainActivity
 import com.usta.laboratoriovirtual.R
+import com.usta.laboratoriovirtual.chat.ChatScreen
 import com.usta.laboratoriovirtual.classRoom.ClassProgrammingScreen
 import com.usta.laboratoriovirtual.classRoom.DifferentialEquationsScreen
 import com.usta.laboratoriovirtual.ui.theme.LaboratorioVirtualTheme
@@ -127,7 +125,8 @@ private fun MainMenuScreen() {
                     Text(
                         text = "Aulas de Programación",
                         fontFamily = firaSans,
-                        color = Color.White
+                        color = Color.White,
+                        fontSize = 18.sp
                     )
                 }
             }
@@ -162,7 +161,8 @@ private fun MainMenuScreen() {
                     Text(
                         text = "Aulas de Ecuaciones Diferenciales",
                         fontFamily = firaSans,
-                        color = Color.White
+                        color = Color.White,
+                        fontSize = 18.sp
                     )
                 }
             }
@@ -205,6 +205,26 @@ private fun MainMenuScreen() {
                 },
                 title = { Text("Cerrar sesión") },
                 text = { Text("¿Estás seguro de que deseas cerrar sesión?") }
+            )
+        }
+
+        Button(
+            onClick = {
+                val intent = Intent(context, ChatScreen::class.java)
+                context.startActivity(intent)
+                (context as? Activity)?.finish()
+            },
+            colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF0056B3)),
+            modifier = Modifier
+                .align(Alignment.BottomEnd)
+                .padding(16.dp)
+                .size(width = 114.dp, height = 52.dp)
+        ) {
+            Text(
+                text = "ChatBot",
+                fontFamily = firaSans,
+                color = Color.White,
+                fontSize = 18.sp
             )
         }
     }

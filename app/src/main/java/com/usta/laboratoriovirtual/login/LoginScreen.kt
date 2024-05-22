@@ -3,6 +3,7 @@ package com.usta.laboratoriovirtual.login
 import android.app.Activity
 import android.content.Intent
 import android.widget.Toast
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.text.KeyboardActions
@@ -22,12 +23,14 @@ import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.input.PasswordVisualTransformation
 import com.google.firebase.Firebase
 import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException
 import com.google.firebase.auth.FirebaseAuthInvalidUserException
 import com.google.firebase.auth.auth
+import com.usta.laboratoriovirtual.R
 import com.usta.laboratoriovirtual.menu.MenuScreen
 import com.usta.laboratoriovirtual.ui.theme.firaSans
 
@@ -36,30 +39,50 @@ fun LoginScreen() {
     var username by rememberSaveable { mutableStateOf("") }
     var password by rememberSaveable { mutableStateOf("") }
 
-    LazyColumn(
+    Column(
         modifier = Modifier
             .fillMaxSize()
-            .padding(16.dp),
+            .padding(8.dp),
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        item {
-            UsernameTextField(username) { username = it }
-        }
-        item {
-            Spacer(modifier = Modifier.height(8.dp))
-        }
-        item {
-            PasswordTextField(password) { password = it }
-        }
-        item {
-            Spacer(modifier = Modifier.height(16.dp))
-        }
-        item {
-            LoginButton(username, password)
+        LazyColumn(
+            modifier = Modifier
+                .fillMaxSize()
+                .padding(16.dp),
+            verticalArrangement = Arrangement.Center,
+            horizontalAlignment = Alignment.CenterHorizontally
+        ) {
+            item {
+                Image(
+                    painter = painterResource(R.drawable.login),
+                    contentDescription = "Logo de Aulas Virtuales",
+                    modifier = Modifier
+                        .size(300.dp)
+                )
+            }
+            item {
+                Spacer(modifier = Modifier.height(4.dp))
+            }
+            item {
+                UsernameTextField(username) { username = it }
+            }
+            item {
+                Spacer(modifier = Modifier.height(4.dp))
+            }
+            item {
+                PasswordTextField(password) { password = it }
+            }
+            item {
+                Spacer(modifier = Modifier.height(8.dp))
+            }
+            item {
+                LoginButton(username, password)
+            }
         }
     }
 }
+
 
 @Composable
 private fun LoginButton(username: String, password: String) {
@@ -102,6 +125,7 @@ private fun LoginButton(username: String, password: String) {
         Text("Acceder", color = Color.White, fontSize = 18.sp, fontFamily = firaSans)
     }
 }
+
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 private fun UsernameTextField(username: String, onUsernameChange: (String) -> Unit) {
