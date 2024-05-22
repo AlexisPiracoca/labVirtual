@@ -49,5 +49,5 @@
     <string name="title_activity_basic_class">BasicClass</string>
     <string name="title_activity_min_max_class">MinMaxClass</string>
     <string name="title_activity_laplace_class">LaplaceClass</string>
-    <string name="title_activity_chat_screen">ChatScreen</string>
+    <string name="activity_week1">ActivityWeek1</string>
 </resources>
