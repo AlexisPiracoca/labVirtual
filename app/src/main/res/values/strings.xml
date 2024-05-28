@@ -50,4 +50,35 @@
     <string name="title_activity_min_max_class">MinMaxClass</string>
     <string name="title_activity_laplace_class">LaplaceClass</string>
     <string name="activity_week1">ActivityWeek1</string>
+
+
+
+    <string name="codigo_variables">
+        <![CDATA[
+public class Variables {&#160;\n\n
+public static void main(String[] args) {&#160;\n\n
+// Declarar una variable llamada \'edad\' de tipo entero y asignarle el valor &#160;\n\n
+&#160;&#160;&#160;&#160;int edad = 10;&#160;\n\n
+// Imprimir el valor de la variable \'edad\'&#160;\n\n
+&#160;&#160;&#160;&#160;System.out.println("La edad es: " + edad);&#160;\n\n
+&#160;}&#160;\n
+}&#160;
+        ]]>
+    </string>
+
+    <string name="actividad_variable">
+        <![CDATA[
+public class Variables {&#160;\n\n
+public static void main(String[] args) {&#160;\n\n
+&#160;&#160;&#160;&#160;int valor = 15;&#160;\n\n
+&#160;&#160;&#160;&#160;System.out.println("El valor: "+ valor);&#160;\n\n
+&#160;}&#160;\n
+}&#160;
+        ]]>
+    </string>
+
+
+
+
+
 </resources>
