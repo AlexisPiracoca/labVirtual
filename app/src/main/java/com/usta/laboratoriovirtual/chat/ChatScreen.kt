@@ -31,13 +31,13 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.google.ai.client.generativeai.GenerativeModel
-import com.google.ai.client.generativeai.type.content
 import com.usta.laboratoriovirtual.menu.MenuScreen
 import com.usta.laboratoriovirtual.ui.theme.LaboratorioVirtualTheme
 import com.usta.laboratoriovirtual.ui.theme.firaSans
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
+
 
 class ChatScreen : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
