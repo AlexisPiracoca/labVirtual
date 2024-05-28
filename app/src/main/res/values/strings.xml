@@ -113,6 +113,49 @@ public static void main(String[] args) {&#160;\n\n
         ]]>
     </string>
 
+    <!-- EJEMPLOS PARA HERENCIA Y POLIMORFISMO  -->
+    <string name="ejemplo_herencia">class Vehiculo {\n\tString marca;\n\tint año;\n\n\tvoid encender() {\n\t\tSystem.out.println("El vehículo está encendido");\n\t}\n}\n\nclass Coche extends Vehiculo {\n\tint numPuertas;\n\n\tvoid tocarClaxon() {\n\t\tSystem.out.println("El coche está tocando el claxon");\n\t}\n}\n\npublic class HerenciaEjemplo {\n\tpublic static void main(String[] args) {\n\t\tCoche miCoche = new Coche();\n\t\tmiCoche.marca = "Toyota";\n\t\tmiCoche.año = 2021;\n\t\tmiCoche.numPuertas = 4;\n\t\tmiCoche.encender();\n\t\tmiCoche.tocarClaxon();\n\t}\n}</string>
+    <string name="ejemplo_polimorfismo">class Animal {\n\tvoid hacerSonido() {\n\t\tSystem.out.println("El animal hace un sonido");\n\t}\n}\n\nclass Perro extends Animal {\n\t@Override\n\tvoid hacerSonido() {\n\t\tSystem.out.println("El perro ladra");\n\t}\n}\n\nclass Gato extends Animal {\n\t@Override\n\tvoid hacerSonido() {\n\t\tSystem.out.println("El gato maúlla");\n\t}\n}\n\npublic class PolimorfismoEjemplo {\n\tpublic static void main(String[] args) {\n\t\tAnimal miAnimal;\n\n\t\tmiAnimal = new Perro();\n\t\tmiAnimal.hacerSonido();\n\n\t\tmiAnimal = new Gato();\n\t\tmiAnimal.hacerSonido();\n\t}\n}</string>
 
 
+
+    <!-- EJERCICIOS DE HERENCIA Y POLIMORFIMOS -->
+
+    <!-- Quiz Questions -->
+    <string name="question_1">¿De qué clase hereda la clase `Coche`?</string>
+    <string name="question_2">¿Qué método se hereda de la clase `Vehículo` a la clase `Coche`?</string>
+    <string name="question_3">Si tienes un objeto `Animal` que es una instancia de `Perro`, ¿qué sonido hará?</string>
+    <string name="question_4">Si cambias la instancia del objeto `Animal` a `Gato` y llamas al método `hacerSonido()`, ¿qué resultado obtendrás?</string>
+
+    <!-- Quiz Options for Question 1 -->
+    <string-array name="options_question_1">
+        <item>Vehículo</item>
+        <item>Animal</item>
+        <item>Persona</item>
+        <item>Ninguna de las anteriores</item>
+    </string-array>
+
+    <!-- Quiz Options for Question 2 -->
+    <string-array name="options_question_2">
+        <item>encender()</item>
+        <item>tocarClaxon()</item>
+        <item>hacerSonido()</item>
+        <item>maullar()</item>
+    </string-array>
+
+    <!-- Quiz Options for Question 3 -->
+    <string-array name="options_question_3">
+        <item>El perro ladra</item>
+        <item>El gato maúlla</item>
+        <item>El animal hace un sonido</item>
+        <item>Ninguna de las anteriores</item>
+    </string-array>
+
+    <!-- Quiz Options for Question 4 -->
+    <string-array name="options_question_4">
+        <item>El perro ladra</item>
+        <item>El gato maúlla</item>
+        <item>El animal hace un sonido</item>
+        <item>Ninguna de las anteriores</item>
+    </string-array>
 </resources>

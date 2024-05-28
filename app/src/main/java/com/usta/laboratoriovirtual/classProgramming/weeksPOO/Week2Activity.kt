@@ -1,10 +1,11 @@
 package com.usta.laboratoriovirtual.classProgramming.weeksPOO
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.view.animation.Animation
 import android.widget.Button
-import android.widget.ImageButton;
+import android.widget.ImageButton
 import android.widget.LinearLayout
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -13,21 +14,19 @@ import androidx.core.view.WindowInsetsCompat
 import androidx.core.view.updatePadding
 import com.usta.laboratoriovirtual.R
 import com.usta.laboratoriovirtual.classProgramming.PooClassScreen
-import com.usta.laboratoriovirtual.databinding.ActivityWeek1Binding
-import android.content.Intent
+import com.usta.laboratoriovirtual.databinding.ActivityWeek2Binding
 
-class Week1Activity : AppCompatActivity() {
+class Week2Activity : AppCompatActivity() {
 
-    private lateinit var binding: ActivityWeek1Binding
+    private lateinit var binding: ActivityWeek2Binding
     private var isFrontVisible1 = true
     private var isFrontVisible2 = true
     private var isFrontVisible3 = true
     private var isFrontVisible4 = true
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        binding = ActivityWeek1Binding.inflate(layoutInflater)
+        binding = ActivityWeek2Binding.inflate(layoutInflater)
         setContentView(binding.root)
 
         val btnBack = findViewById<ImageButton>(R.id.back_button_main)
@@ -38,11 +37,13 @@ class Week1Activity : AppCompatActivity() {
             startActivity(intent)
             finish()
         }
+
         btnGoActivity.setOnClickListener{
-            val intent = Intent(this, FirstActivity::class.java)
+            val intent = Intent(this, SecondActivity::class.java)
             startActivity(intent)
             finish()
         }
+
 
         ViewCompat.setOnApplyWindowInsetsListener(binding.root) { view, insets ->
             val systemInsets = insets.getInsets(WindowInsetsCompat.Type.systemBars())
@@ -53,11 +54,13 @@ class Week1Activity : AppCompatActivity() {
             WindowInsetsCompat.CONSUMED
         }
 
+
         val flipOut1 = android.view.animation.AnimationUtils.loadAnimation(this, R.anim.flip_out)
         val flipOut2 = android.view.animation.AnimationUtils.loadAnimation(this, R.anim.flip_out)
         val flipOut3 = android.view.animation.AnimationUtils.loadAnimation(this, R.anim.flip_out)
         val flipOut4 = android.view.animation.AnimationUtils.loadAnimation(this, R.anim.flip_out)
         val flopIn = android.view.animation.AnimationUtils.loadAnimation(this, R.anim.flip_in)
+
 
         flipOut1.setAnimationListener(object : Animation.AnimationListener {
             override fun onAnimationStart(animation: Animation?) {}
