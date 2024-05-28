@@ -15,6 +15,9 @@
         android:theme="@style/Theme.LaboratorioVirtual"
         tools:targetApi="31">
         <activity
+            android:name=".classProgramming.introduccion.week2condicionales"
+            android:exported="false" />
+        <activity
             android:name=".classProgramming.introduccion.week1introduction"
             android:exported="false" />
         <activity
