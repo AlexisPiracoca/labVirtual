@@ -21,6 +21,9 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.compose.ui.tooling.preview.Preview
+import com.usta.laboratoriovirtual.classProgramming.introduccion.week1introduction
+import com.usta.laboratoriovirtual.classProgramming.introduccion.week2condicionales
+import com.usta.laboratoriovirtual.classProgramming.weeksPOO.Week1Activity
 import com.usta.laboratoriovirtual.classRoom.ClassProgrammingScreen
 import com.usta.laboratoriovirtual.ui.theme.LaboratorioVirtualTheme
 
@@ -85,17 +88,21 @@ private fun MainScreen() {
         Spacer(modifier = Modifier.height(16.dp))
 
         CourseCard(
-            title = "Semana 1",
+            title = "Variables",
             progress = 0.7f,
-            onClick = {}
+            onClick = {val intent = Intent(context, week1introduction::class.java)
+                context.startActivity(intent)
+                (context as? Activity)?.finish()}
         )
 
         Spacer(modifier = Modifier.height(16.dp))
 
         CourseCard(
-            title = "Semana 2",
+            title = "Condicionales",
             progress = 0.5f,
-            onClick = {  }
+            onClick = {val intent = Intent(context, week2condicionales::class.java)
+                context.startActivity(intent)
+                (context as? Activity)?.finish()}
         )
 
         Spacer(modifier = Modifier.height(16.dp))
@@ -111,7 +118,7 @@ private fun MainScreen() {
         CourseCard(
             title = "Semana 4",
             progress = 0.5f,
-            onClick = { }
+            onClick ={}
         )
 
         Spacer(modifier = Modifier.height(16.dp))
