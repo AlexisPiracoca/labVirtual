@@ -100,13 +100,38 @@ public static void main(String[] args) {&#160;\n\n
         <![CDATA[
 public class EstructurasCondicionales {&#160;\n\n
 public static void main(String[] args) {&#160;\n\n
-// Declarar una variable llamada \'edad\' de tipo entero y asignarle el valor &#160;\n\n
 &#160;&#160;&#160;&#160;int edad = 18;&#160;\n\n
-// Verificar si la edad es mayor o igual a 18&#160;\n\n
 &#160;&#160;&#160;&#160;if (edad >= 18) {&#160;\n\n
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;System.out.println("Eres mayor de edad.");&#160;\n\n
 &#160;&#160;&#160;&#160;} else {&#160;\n\n
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;System.out.println("Eres menor de edad.");&#160;\n\n
+&#160;&#160;&#160;&#160;}&#160;\n\n
+&#160;}&#160;\n
+}&#160;
+        ]]>
+    </string>
+
+    <!-- ejemplo ciclos  -->
+    <string name="codigo_ciclos">
+        <![CDATA[
+public class Ciclos {&#160;\n\n
+public static void main(String[] args) {&#160;\n\n
+// Imprimir los números del 1 al 5&#160;\n\n
+&#160;&#160;&#160;&#160;for (int i = 1; i <= 5; i++) {&#160;\n\n
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;System.out.println(i);&#160;\n\n
+&#160;&#160;&#160;&#160;}&#160;\n\n
+&#160;}&#160;\n
+}&#160;
+        ]]>
+    </string>
+
+    <!-- ejercicio ciclos  -->
+    <string name="ejericicio_ciclos">
+        <![CDATA[
+public class Ciclos {&#160;\n\n
+public static void main(String[] args) {&#160;\n\n
+&#160;&#160;&#160;&#160;for (int i = 4; i <= 7; i++) {&#160;\n\n
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;System.out.println(i);&#160;\n\n
 &#160;&#160;&#160;&#160;}&#160;\n\n
 &#160;}&#160;\n
 }&#160;

@@ -23,6 +23,7 @@ import androidx.compose.ui.unit.sp
 import androidx.compose.ui.tooling.preview.Preview
 import com.usta.laboratoriovirtual.classProgramming.introduccion.week1introduction
 import com.usta.laboratoriovirtual.classProgramming.introduccion.week2condicionales
+import com.usta.laboratoriovirtual.classProgramming.introduccion.week3ciclos
 import com.usta.laboratoriovirtual.classProgramming.weeksPOO.Week1Activity
 import com.usta.laboratoriovirtual.classRoom.ClassProgrammingScreen
 import com.usta.laboratoriovirtual.ui.theme.LaboratorioVirtualTheme
@@ -108,9 +109,11 @@ private fun MainScreen() {
         Spacer(modifier = Modifier.height(16.dp))
 
         CourseCard(
-            title = "Semana 3",
+            title = "Ciclos",
             progress = 0.3f,
-            onClick = {  }
+            onClick = {val intent = Intent(context, week3ciclos::class.java)
+                context.startActivity(intent)
+                (context as? Activity)?.finish()}
         )
 
         Spacer(modifier = Modifier.height(16.dp))
