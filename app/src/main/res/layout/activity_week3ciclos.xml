@@ -4,8 +4,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".classProgramming.introduccion.week2condicionales">
+    tools:context=".classProgramming.introduccion.week3ciclos">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -22,7 +21,7 @@
             android:textColor="@color/black"
             android:textStyle="italic"
             android:textSize="27dp"
-            android:text="Estructuras Condicionales" />
+            android:text="Ciclos" />
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent">
@@ -44,7 +43,7 @@
                     android:layout_width="match_parent"
                     style="@style/TextAppearance.MaterialComponents.Subtitle2"
                     android:layout_height="wrap_content"
-                    android:text="\nDefinicion:"
+                    android:text="\nDefinición:"
                     android:textColor="@color/black"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -58,7 +57,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
-                    android:text="Las estructuras condicionales te permiten tomar decisiones en tu programa. Puedes hacer que tu programa haga algo si se cumple una condición, y otra cosa si no se cumple esa condición.\n \nEjemplo de Código:"
+                    android:text="Los ciclos te permiten hacer que tu programa repita una tarea varias veces. Puedes usar un ciclo para ejecutar el mismo código una y otra vez hasta que se cumpla una condición específica.\n \nEjemplo de Código:"
                     android:textColor="@color/black"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -76,7 +75,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:padding="16dp"
-                        android:text="@string/codigo_condicionales"
+                        android:text="@string/codigo_ciclos"
                         android:textColor="@android:color/white"
                         android:background="@android:color/black"
                         android:textSize="12sp"
@@ -91,7 +90,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
-                    android:text="En este ejemplo, verificamos si la variable edad es mayor o igual a 18. \n- Si la condición es verdadera, imprimimos 'Eres mayor de edad'.\n- Si la condición es falsa, imprimimos 'Eres menor de edad'.\nComo la edad es 15 no cumple la condicion que se pauta, por lo tanto el 'System.out.println' hara que salga el mensaje: 'Eres menor de edad'."
+                    android:text="En este ejemplo, utilizamos un ciclo for para imprimir los números del 1 al 5.\n- Declaramos una variable llamada i e inicializamos su valor en 1.\n- El ciclo se ejecuta mientras i sea menor o igual a 5.\n- En cada iteración del ciclo, imprimimos el valor de i y luego incrementamos i en 1.\nEn la consola nos saldra los numero del 1-5 asi:\n1\n2\n3\n4\n5"
+
                     android:textColor="@color/black"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -116,7 +116,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
-                    android:text="Escoge la respuesta CORRECTA\n\nEl siguiente codigo que imprime:"
+                    android:text="Escoge la respuesta CORRECTA\n\nEl siguiente codigo imprime el rango de numeros:"
                     android:textColor="@color/black"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -137,7 +137,7 @@
                         android:gravity="start"
                         android:padding="16dp"
                         android:scrollbars="vertical"
-                        android:text="@string/ejercicio_condicionales"
+                        android:text="@string/ejericicio_ciclos"
                         android:textColor="@android:color/white"
                         android:textSize="12sp" />
 
@@ -150,29 +150,56 @@
 
 
                     <Button
-                        android:id="@+id/opcion1condicional"
+                        android:id="@+id/opcion1ciclo"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="15dp"
                         android:background="@color/blue"
                         android:layout_weight="1"
-                        android:text="Eres Mayor de Edad" />
+                        android:text="1-5" />
 
 
                     <Button
-                        android:id="@+id/opcion2condicional"
+                        android:id="@+id/opcion2ciclo"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="15dp"
                         android:background="@color/blue"
                         android:layout_weight="1"
-                        android:text="Eres Menor de Edad" />
+                        android:text="1-7" />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+
+                    <Button
+                        android:id="@+id/opcion3ciclo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15dp"
+                        android:background="@color/blue"
+                        android:layout_weight="1"
+                        android:text="4-7" />
+
+
+                    <Button
+                        android:id="@+id/opcion4ciclo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15dp"
+                        android:background="@color/blue"
+                        android:layout_weight="1"
+                        android:text="4-5" />
 
 
                 </LinearLayout>
 
                 <Button
-                    android:id="@+id/siguientecondicionales"
+                    android:id="@+id/siguienteciclos"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="15dp"
