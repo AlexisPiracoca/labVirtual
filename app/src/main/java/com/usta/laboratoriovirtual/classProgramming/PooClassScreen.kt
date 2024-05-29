@@ -35,6 +35,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.usta.laboratoriovirtual.classProgramming.weeksPOO.Week1Activity
+import com.usta.laboratoriovirtual.classProgramming.weeksPOO.Week2Activity
 import com.usta.laboratoriovirtual.classRoom.ClassProgrammingScreen
 import com.usta.laboratoriovirtual.ui.theme.LaboratorioVirtualTheme
 
@@ -111,7 +112,9 @@ private fun MainScreen() {
         CourseCard(
             title = "Semana 2",
             progress = 0.5f,
-            onClick = {  }
+            onClick = { val intent = Intent(context, Week2Activity::class.java)
+                context.startActivity(intent)
+                (context as? Activity)?.finish() }
         )
 
         Spacer(modifier = Modifier.height(16.dp))
