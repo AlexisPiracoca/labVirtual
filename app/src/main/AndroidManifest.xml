@@ -15,6 +15,12 @@
         android:theme="@style/Theme.LaboratorioVirtual"
         tools:targetApi="31">
         <activity
+            android:name=".classProgramming.introduccion.week5arreglos"
+            android:exported="false" />
+        <activity
+            android:name=".classProgramming.introduccion.week4funciones"
+            android:exported="false" />
+        <activity
             android:name=".classProgramming.introduccion.week3ciclos"
             android:exported="false" />
         <activity

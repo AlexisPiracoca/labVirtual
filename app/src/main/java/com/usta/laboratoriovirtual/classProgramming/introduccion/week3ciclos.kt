@@ -29,6 +29,8 @@ class week3ciclos : AppCompatActivity() {
         opcion4ciclo = findViewById(R.id.opcion4ciclo)
         siguienteciclos = findViewById(R.id.siguienteciclos)
 
+        siguienteciclos.setOnClickListener { navigateTofunciones() }
+
 
 
         opcion1ciclo.setOnClickListener {
@@ -60,9 +62,9 @@ class week3ciclos : AppCompatActivity() {
             opcion4ciclo.setBackgroundColor(ContextCompat.getColor(this, R.color.colorPressed))
 
         }
-
-
-
-
+    }
+    private fun navigateTofunciones() {
+        val intent = Intent(this, week4funciones ::class.java)
+        startActivity(intent)
     }
 }

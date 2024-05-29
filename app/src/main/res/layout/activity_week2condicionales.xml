@@ -4,6 +4,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/programer"
     android:orientation="vertical"
     tools:context=".classProgramming.introduccion.week2condicionales">
 
@@ -19,7 +20,8 @@
             style="@style/TextAppearance.MaterialComponents.Subtitle2"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:textColor="@color/black"
+            android:background="#52262627"
+            android:textColor="@color/white"
             android:textStyle="italic"
             android:textSize="27dp"
             android:text="Estructuras Condicionales" />
@@ -45,10 +47,13 @@
                     style="@style/TextAppearance.MaterialComponents.Subtitle2"
                     android:layout_height="wrap_content"
                     android:text="\nDefinicion:"
-                    android:textColor="@color/black"
+                    android:background="#52262627"
+                    android:textColor="@color/white"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/title" />
+
+
 
 
 
@@ -59,10 +64,13 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
                     android:text="Las estructuras condicionales te permiten tomar decisiones en tu programa. Puedes hacer que tu programa haga algo si se cumple una condición, y otra cosa si no se cumple esa condición.\n \nEjemplo de Código:"
-                    android:textColor="@color/black"
+                    android:background="#52262627"
+                    android:textColor="@color/white"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/title" />
+
+
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -92,10 +100,13 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
                     android:text="En este ejemplo, verificamos si la variable edad es mayor o igual a 18. \n- Si la condición es verdadera, imprimimos 'Eres mayor de edad'.\n- Si la condición es falsa, imprimimos 'Eres menor de edad'.\nComo la edad es 15 no cumple la condicion que se pauta, por lo tanto el 'System.out.println' hara que salga el mensaje: 'Eres menor de edad'."
-                    android:textColor="@color/black"
+                    android:background="#52262627"
+                    android:textColor="@color/white"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/title" />
+
+
 
 
 
@@ -106,7 +117,8 @@
                     style="@style/TextAppearance.MaterialComponents.Subtitle2"
                     android:layout_height="wrap_content"
                     android:text="¿Que aprendí?"
-                    android:textColor="@color/black"
+                    android:background="#52262627"
+                    android:textColor="@color/white"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/title" />
@@ -117,7 +129,8 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
                     android:text="Escoge la respuesta CORRECTA\n\nEl siguiente codigo que imprime:"
-                    android:textColor="@color/black"
+                    android:background="#52262627"
+                    android:textColor="@color/white"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/title" />

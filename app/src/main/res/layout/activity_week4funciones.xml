@@ -4,8 +4,8 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/lampara"
-    tools:context=".classProgramming.introduccion.week3ciclos">
+    android:background="@drawable/chip"
+    tools:context=".classProgramming.introduccion.week4funciones">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -23,7 +23,7 @@
             android:textColor="@color/white"
             android:textStyle="italic"
             android:textSize="27dp"
-            android:text="Ciclos" />
+            android:text="Funciones" />
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent">
@@ -60,7 +60,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
-                    android:text="Los ciclos te permiten hacer que tu programa repita una tarea varias veces. Puedes usar un ciclo para ejecutar el mismo código una y otra vez hasta que se cumpla una condición específica.\n \nEjemplo de Código:"
+                    android:text="Las funciones son como pequeñas máquinas en tu programa que pueden hacer una tarea específica. Puedes llamar a una función desde cualquier parte de tu programa para realizar esa tarea sin tener que escribir el código nuevamente.\n \nEjemplo de Código:"
                     android:background="#52262627"
                     android:textColor="@color/white"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -79,7 +79,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:padding="16dp"
-                        android:text="@string/codigo_ciclos"
+                        android:text="@string/codigo_funciones"
                         android:textColor="@android:color/white"
                         android:background="@android:color/black"
                         android:textSize="12sp"
@@ -94,7 +94,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
-                    android:text="En este ejemplo, utilizamos un ciclo for para imprimir los números del 1 al 5.\n- Declaramos una variable llamada i e inicializamos su valor en 1.\n- El ciclo se ejecuta mientras i sea menor o igual a 5.\n- En cada iteración del ciclo, imprimimos el valor de i y luego incrementamos i en 1.\nEn la consola nos saldra los numero del 1-5 asi:\n1\n2\n3\n4\n5"
+                    android:text="En este ejemplo, definimos una función llamada sumar que toma dos números como parámetros y devuelve su suma. \nEn el método main, llamamos a la función sumar con los valores 5 y 3, y almacenamos el resultado en la variable resultado. \nLuego, imprimimos el resultado que en este caso es '8'."
                     android:background="#52262627"
                     android:textColor="@color/white"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -110,7 +110,8 @@
                     style="@style/TextAppearance.MaterialComponents.Subtitle2"
                     android:layout_height="wrap_content"
                     android:text="¿Que aprendí?"
-                    android:textColor="@color/black"
+                    android:background="#52262627"
+                    android:textColor="@color/white"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/title" />
@@ -120,7 +121,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
-                    android:text="Escoge la respuesta CORRECTA\n\nEl siguiente codigo imprime el rango de numeros:"
+                    android:text="Escoge la respuesta CORRECTA\n\nEl siguiente codigo imprime:"
                     android:background="#52262627"
                     android:textColor="@color/white"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -142,7 +143,7 @@
                         android:gravity="start"
                         android:padding="16dp"
                         android:scrollbars="vertical"
-                        android:text="@string/ejercicio_ciclos"
+                        android:text="@string/ejercicio_funciones"
                         android:textColor="@android:color/white"
                         android:textSize="12sp" />
 
@@ -155,23 +156,23 @@
 
 
                     <Button
-                        android:id="@+id/opcion1ciclo"
+                        android:id="@+id/opcion1funcion"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="15dp"
                         android:background="@color/blue"
                         android:layout_weight="1"
-                        android:text="1-5" />
+                        android:text="2" />
 
 
                     <Button
-                        android:id="@+id/opcion2ciclo"
+                        android:id="@+id/opcion2funcion"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="15dp"
                         android:background="@color/blue"
                         android:layout_weight="1"
-                        android:text="1-7" />
+                        android:text="8" />
 
 
                 </LinearLayout>
@@ -182,29 +183,29 @@
 
 
                     <Button
-                        android:id="@+id/opcion3ciclo"
+                        android:id="@+id/opcion3funcion"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="15dp"
                         android:background="@color/blue"
                         android:layout_weight="1"
-                        android:text="4-7" />
+                        android:text="15" />
 
 
                     <Button
-                        android:id="@+id/opcion4ciclo"
+                        android:id="@+id/opcion4funcion"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="15dp"
                         android:background="@color/blue"
                         android:layout_weight="1"
-                        android:text="4-5" />
+                        android:text="2.5" />
 
 
                 </LinearLayout>
 
                 <Button
-                    android:id="@+id/siguienteciclos"
+                    android:id="@+id/siguientearreglos"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="15dp"
