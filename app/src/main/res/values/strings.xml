@@ -167,6 +167,36 @@ public class Funciones {\n
     ]]>
 </string>
 
+    <string name="codigo_arreglos">
+    <![CDATA[
+public class Arreglos {\n
+\t\tpublic static void main(String[] args) {\n
+\t\t\t\t// Declarar e inicializar un arreglo de números enteros\n
+\t\t\t\tint[] numeros = {1, 2, 3, 4, 5};\n
+\n
+\t\t\t\t// Acceder y mostrar los elementos del arreglo\n
+\t\t\t\tfor (int i = 0; i < numeros.length; i++) {\n
+\t\t\t\t\t\tSystem.out.println("Elemento en el índice " + i + ": " + numeros[i]);\n
+\t\t\t\t}\n
+\t\t}\n
+}\n
+    ]]>
+</string>
+
+    <string name="ejercicio_arreglos">
+    <![CDATA[
+public class Arreglos {\n
+\t\tpublic static void main(String[] args) {\n
+\t\t\t\t// Declarar e inicializar un arreglo de números enteros\n
+\t\t\t\tint[] numeros = {1, 2, 3, 4, 5};\n
+\n
+\t\t\t\t\t\tSystem.out.println(numero[2]);\n
+\t\t\t\t}\n
+\t\t}\n
+}\n
+    ]]>
+</string>
+
 
 
 

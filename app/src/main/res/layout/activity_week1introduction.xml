@@ -13,24 +13,37 @@
         android:layout_height="wrap_content"
         android:layout_margin="15dp"
         android:orientation="vertical">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#52262627"
-            android:layout_margin="5dp"
-            android:orientation="vertical">
+            android:orientation="horizontal">
 
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="wrap_content"
-            style="@style/TextAppearance.MaterialComponents.Subtitle2"
-            android:layout_height="wrap_content"
-            android:layout_gravity="left"
 
-            android:textColor="@color/white"
-            android:textStyle="italic"
-            android:textSize="27dp"
-            android:text="Introducción a la programacion" />
+            <ImageButton
+                android:id="@+id/home1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/home"/>
+
+            <TextView
+                android:id="@+id/titulo"
+                android:layout_width="wrap_content"
+                style="@style/TextAppearance.MaterialComponents.Subtitle2"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="#52262627"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textStyle="italic"
+                android:textSize="27dp"
+                android:text="Introduccion a la Programacion" />
+
+
+        </LinearLayout>
+
+
         </LinearLayout>
         <ScrollView
             android:layout_width="match_parent"
@@ -44,15 +57,13 @@
 
 
 
-
-
-
                 <TextView
                     android:id="@+id/subhead"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
                     android:background="#52262627"
+                    android:gravity=""
                     android:textColor="@color/white"
                     android:text="La introducción a la programación es el primer paso para comprender cómo funcionan las computadoras y cómo se pueden utilizar para resolver problemas. En este proceso, se aprenden los conceptos básicos de los lenguajes de programación, la lógica de algoritmos y las estructuras de datos. Estos fundamentos permiten a los principiantes desarrollar aplicaciones simples, automatizar tareas y sentar las bases para habilidades más avanzadas en el desarrollo de software. A medida que los estudiantes progresan, adquieren una mentalidad lógica y estructurada, esencial para abordar desafíos complejos en el campo de la tecnología."
                     app:layout_constraintEnd_toEndOf="parent"
@@ -224,7 +235,7 @@
 
 
 
-    </LinearLayout>
+
 
 
 

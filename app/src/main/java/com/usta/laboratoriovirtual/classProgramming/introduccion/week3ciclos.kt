@@ -4,12 +4,14 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
+import android.widget.ImageButton
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.usta.laboratoriovirtual.R
+import com.usta.laboratoriovirtual.classProgramming.IntroProgrammingClassScreen
 
 class week3ciclos : AppCompatActivity() {
 
@@ -18,6 +20,7 @@ class week3ciclos : AppCompatActivity() {
     private lateinit var opcion3ciclo: Button
     private lateinit var opcion4ciclo: Button
     private lateinit var siguienteciclos: Button
+    private lateinit var home3: ImageButton
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_week3ciclos)
@@ -28,6 +31,9 @@ class week3ciclos : AppCompatActivity() {
         opcion3ciclo = findViewById(R.id.opcion3ciclo)
         opcion4ciclo = findViewById(R.id.opcion4ciclo)
         siguienteciclos = findViewById(R.id.siguienteciclos)
+        home3 = findViewById(R.id.home3)
+
+        home3.setOnClickListener { navigateTohome() }
 
         siguienteciclos.setOnClickListener { navigateTofunciones() }
 
@@ -65,6 +71,10 @@ class week3ciclos : AppCompatActivity() {
     }
     private fun navigateTofunciones() {
         val intent = Intent(this, week4funciones ::class.java)
+        startActivity(intent)
+    }
+    private fun navigateTohome() {
+        val intent = Intent(this, IntroProgrammingClassScreen ::class.java)
         startActivity(intent)
     }
 }

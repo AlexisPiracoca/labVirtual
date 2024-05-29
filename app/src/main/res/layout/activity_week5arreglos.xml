@@ -13,17 +13,34 @@
         android:layout_margin="15dp"
         android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/titulo"
-            android:layout_width="wrap_content"
-            style="@style/TextAppearance.MaterialComponents.Subtitle2"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:background="#AB262627"
-            android:textColor="@color/white"
-            android:textStyle="italic"
-            android:textSize="27dp"
-            android:text="Arreglos" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+
+            <ImageButton
+                android:id="@+id/home5"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/home"/>
+
+
+            <TextView
+                android:id="@+id/titulo"
+                android:layout_width="wrap_content"
+                style="@style/TextAppearance.MaterialComponents.Subtitle2"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textStyle="italic"
+                android:textSize="27dp"
+                android:text="              Arreglos" />
+
+
+        </LinearLayout>
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent">
@@ -62,7 +79,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
-                    android:text="Un arreglo es una colección de elementos del mismo tipo almacenados en una secuencia contigua de memoria. Puedes acceder a cada elemento del arreglo utilizando un índice.\n \nEjemplo de Código:"
+                    android:text="Un arreglo es una colección de elementos del mismo tipo almacenados en una secuencia contigua de memoria. Puedes acceder a cada elemento del arreglo utilizando un índice.\n Los arreglos se empiezan a contar desde la posicion 0.\n \nEjemplo de Código:"
                     android:background="#AB262627"
                     android:textColor="@color/white"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -83,7 +100,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:padding="16dp"
-                        android:text="@string/codigo_condicionales"
+                        android:text="@string/codigo_arreglos"
                         android:textColor="@android:color/white"
                         android:background="@android:color/black"
                         android:textSize="12sp"
@@ -98,7 +115,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
-                    android:text="En este ejemplo, verificamos si la variable edad es mayor o igual a 18. \n- Si la condición es verdadera, imprimimos 'Eres mayor de edad'.\n- Si la condición es falsa, imprimimos 'Eres menor de edad'.\nComo la edad es 15 no cumple la condicion que se pauta, por lo tanto el 'System.out.println' hara que salga el mensaje: 'Eres menor de edad'."
+                    android:text="En este ejemplo, declaramos e inicializamos un arreglo llamado numeros que contiene los números del 1 al 5. \n - Utilizamos un ciclo for para recorrer el arreglo.\n - En cada iteración del ciclo, accedemos al elemento en el índice i del arreglo y lo mostramos en la consola."
                     android:background="#AB262627"
                     android:textColor="@color/white"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -106,7 +123,12 @@
                     app:layout_constraintTop_toBottomOf="@id/title" />
 
 
-
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="233dp"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/codeee" />
 
 
 
@@ -149,7 +171,7 @@
                         android:gravity="start"
                         android:padding="16dp"
                         android:scrollbars="vertical"
-                        android:text="@string/ejercicio_condicionales"
+                        android:text="@string/ejercicio_arreglos"
                         android:textColor="@android:color/white"
                         android:textSize="12sp" />
 
@@ -162,29 +184,55 @@
 
 
                     <Button
-                        android:id="@+id/opcion1condicional"
+                        android:id="@+id/opcion1arreglo"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="15dp"
                         android:backgroundTint="@color/blue"
                         android:layout_weight="1"
-                        android:text="Eres Mayor de Edad" />
+                        android:text="1" />
 
 
                     <Button
-                        android:id="@+id/opcion2condicional"
+                        android:id="@+id/opcion2arreglo"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="15dp"
                         android:backgroundTint="@color/blue"
                         android:layout_weight="1"
-                        android:text="Eres Menor de Edad" />
+                        android:text="2" />
 
 
                 </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
 
+
+                    <Button
+                        android:id="@+id/opcion3arreglo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15dp"
+                        android:backgroundTint="@color/blue"
+                        android:layout_weight="1"
+                        android:text="3" />
+
+
+                    <Button
+                        android:id="@+id/opcion4arreglo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15dp"
+                        android:backgroundTint="@color/blue"
+                        android:layout_weight="1"
+                        android:text="4" />
+
+
+                </LinearLayout>
                 <Button
-                    android:id="@+id/siguientecondicionales"
+                    android:id="@+id/siguientehome"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="15dp"

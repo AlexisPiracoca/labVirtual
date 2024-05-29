@@ -13,17 +13,34 @@
         android:layout_margin="15dp"
         android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/titulo"
-            android:layout_width="wrap_content"
-            style="@style/TextAppearance.MaterialComponents.Subtitle2"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:background="#B2262627"
-            android:textColor="@color/white"
-            android:textStyle="italic"
-            android:textSize="27dp"
-            android:text="Funciones" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+
+            <ImageButton
+                android:id="@+id/home4"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/home"/>
+
+
+            <TextView
+                android:id="@+id/titulo"
+                android:layout_width="wrap_content"
+                style="@style/TextAppearance.MaterialComponents.Subtitle2"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textStyle="italic"
+                android:textSize="27dp"
+                android:text="            Funciones" />
+
+
+        </LinearLayout>
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent">
@@ -100,6 +117,13 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/title" />
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/java" />
 
 
 
