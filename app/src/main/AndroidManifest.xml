@@ -24,6 +24,9 @@
             android:name=".classProgramming.weeksPOO.FirstActivity"
             android:exported="false" />
         <activity
+            android:name=".classProgramming.introduccion.week3ciclos"
+            android:exported="false" />
+        <activity
             android:name=".classProgramming.introduccion.week2condicionales"
             android:exported="false" />
         <activity

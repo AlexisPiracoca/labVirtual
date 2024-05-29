@@ -95,11 +95,12 @@ class SecondActivity : AppCompatActivity() {
 
     private fun checkAnswer(selectedOptionIndex: Int) {
         if (selectedOptionIndex == correctAnswers[currentQuestionIndex]) {
-            Toast.makeText(this, "Correcto", Toast.LENGTH_SHORT).show()
+
+            currentQuestionIndex++
+            loadNextQuestion()
         } else {
-            Toast.makeText(this, "Incorrecto", Toast.LENGTH_SHORT).show()
+
+            Toast.makeText(this, "Respuesta incorrecta. ¡Sigue intentándolo!", Toast.LENGTH_SHORT).show()
         }
-        currentQuestionIndex++
-        loadNextQuestion()
     }
 }
