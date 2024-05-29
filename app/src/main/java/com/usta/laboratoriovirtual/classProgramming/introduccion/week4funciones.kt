@@ -44,8 +44,7 @@ class week4funciones : AppCompatActivity() {
             // Cambiar texto y color cuando se presiona el botón
             opcion2funcion.text = "Incorrecto"
             opcion2funcion.setBackgroundColor(ContextCompat.getColor(this, R.color.colorPressed))
-
-        }
+    }
 
         opcion3funcion.setOnClickListener {
             // Cambiar texto y color cuando se presiona el botón

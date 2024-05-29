@@ -19,7 +19,7 @@
             style="@style/TextAppearance.MaterialComponents.Subtitle2"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:background="#52262627"
+            android:background="#B2262627"
             android:textColor="@color/white"
             android:textStyle="italic"
             android:textSize="27dp"
@@ -46,7 +46,7 @@
                     style="@style/TextAppearance.MaterialComponents.Subtitle2"
                     android:layout_height="wrap_content"
                     android:text="\nDefinición:"
-                    android:background="#52262627"
+                    android:background="#B2262627"
                     android:textColor="@color/white"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -61,7 +61,7 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
                     android:text="Las funciones son como pequeñas máquinas en tu programa que pueden hacer una tarea específica. Puedes llamar a una función desde cualquier parte de tu programa para realizar esa tarea sin tener que escribir el código nuevamente.\n \nEjemplo de Código:"
-                    android:background="#52262627"
+                    android:background="#B2262627"
                     android:textColor="@color/white"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -95,7 +95,7 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
                     android:text="En este ejemplo, definimos una función llamada sumar que toma dos números como parámetros y devuelve su suma. \nEn el método main, llamamos a la función sumar con los valores 5 y 3, y almacenamos el resultado en la variable resultado. \nLuego, imprimimos el resultado que en este caso es '8'."
-                    android:background="#52262627"
+                    android:background="#B2262627"
                     android:textColor="@color/white"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -110,7 +110,7 @@
                     style="@style/TextAppearance.MaterialComponents.Subtitle2"
                     android:layout_height="wrap_content"
                     android:text="¿Que aprendí?"
-                    android:background="#52262627"
+                    android:background="#B2262627"
                     android:textColor="@color/white"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -122,7 +122,7 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
                     android:text="Escoge la respuesta CORRECTA\n\nEl siguiente codigo imprime:"
-                    android:background="#52262627"
+                    android:background="#B2262627"
                     android:textColor="@color/white"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -160,7 +160,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="15dp"
-                        android:background="@color/blue"
+                        android:backgroundTint="@color/blue"
                         android:layout_weight="1"
                         android:text="2" />
 
@@ -170,7 +170,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="15dp"
-                        android:background="@color/blue"
+                        android:backgroundTint="@color/blue"
                         android:layout_weight="1"
                         android:text="8" />
 
@@ -187,7 +187,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="15dp"
-                        android:background="@color/blue"
+                        android:backgroundTint="@color/blue"
                         android:layout_weight="1"
                         android:text="15" />
 
@@ -197,7 +197,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="15dp"
-                        android:background="@color/blue"
+                        android:backgroundTint="@color/blue"
                         android:layout_weight="1"
                         android:text="2.5" />
 
@@ -211,6 +211,7 @@
                     android:layout_margin="15dp"
                     android:layout_gravity="right"
                     android:layout_weight="1"
+                    android:backgroundTint="@color/blue"
                     android:visibility="gone"
                     android:text="Siguiente" />
 
