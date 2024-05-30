@@ -140,6 +140,21 @@ class ChatScreen : ComponentActivity() {
                                         delay(30)
                                     }
                                 }
+                                prompt.text.equals("como consulto un libro en el crai", ignoreCase = true) ||
+                                        prompt.text.equals("como consulto un libro", ignoreCase = true) ||
+                                        prompt.text.equals("como consulto un libro de la universidad", ignoreCase = true) ||
+                                        prompt.text.equals("dime como consulto un libro", ignoreCase = true) ||
+                                        prompt.text.equals("cómo consulto un libro en el crai", ignoreCase = true) ||
+                                        prompt.text.equals("cómo consulto un libro", ignoreCase = true) ||
+                                        prompt.text.equals("cómo consulto un libro de la universidad", ignoreCase = true) ||
+                                        prompt.text.equals("dime cómo consulto un libro", ignoreCase = true) -> {
+                                    responseText = "Debes dirigirte a la biblioteca crai del campus o también por la página: https://crai.santototunja.edu.co/"
+                                    displayedText = ""
+                                    for (i in responseText.indices) {
+                                        displayedText += responseText[i]
+                                        delay(30)
+                                    }
+                                }
                                 prompt.text.equals("como cambio la contraseña del campus virtual", ignoreCase = true) ||
                                         prompt.text.equals("cómo cambio la contraseña del campus virtual", ignoreCase = true) ||
                                         prompt.text.equals("cómo cambio la contraseña", ignoreCase = true) ||
@@ -214,7 +229,11 @@ class ChatScreen : ComponentActivity() {
 
                                 prompt.text.equals("que hago si se me olvida la contraseña del campus virtual", ignoreCase = true) ||
                                         prompt.text.equals("se me olvido la contraseña", ignoreCase = true) ||
-                                        prompt.text.equals("olvide la contraseña", ignoreCase = true) -> {
+                                        prompt.text.equals("olvide la contraseña", ignoreCase = true) ||
+                                        prompt.text.equals("se me olvido la contraseña del campus", ignoreCase = true) ||
+                                        prompt.text.equals("se me olvido la contraseña del campus virtual", ignoreCase = true) ||
+                                        prompt.text.equals("olvide la contraseña del campus", ignoreCase = true) ||
+                                        prompt.text.equals("olvide la contraseña del campues virtual", ignoreCase = true) -> {
                                     responseText = "Para recuperar tu contraseña debes ir a la siguiente url: https://plataformalms.ustatunja.edu.co/login/forgot_password.php, luego ingresas tu usuario que es tu documento de identificación y tu correo electrónico o si prefieres por el correo institucional que te hemos suministrado."
                                     displayedText = ""
                                     for (i in responseText.indices) {
@@ -224,7 +243,9 @@ class ChatScreen : ComponentActivity() {
                                 }
                                 prompt.text.equals("como ingreso al campus virtual", ignoreCase = true) ||
                                         prompt.text.equals("dime como ingresar al campus virtual", ignoreCase = true) ||
+                                        prompt.text.equals("dime cómo ingresar al campus virtual", ignoreCase = true) ||
                                         prompt.text.equals("como puedo ingresar al campus virtual", ignoreCase = true) ||
+                                        prompt.text.equals("cómo puedo ingresar al campus virtual", ignoreCase = true) ||
                                         prompt.text.equals("ingresar al campus virtual", ignoreCase = true) ||
                                         prompt.text.equals("como ingreso al campus", ignoreCase = true) ||
                                         prompt.text.equals("cómo puedo ingresar al campus", ignoreCase = true) ||
