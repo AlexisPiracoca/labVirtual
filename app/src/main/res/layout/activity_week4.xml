@@ -7,7 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".classProgramming.weeksPOO.Week1Activity">
+    tools:context=".classProgramming.weeksPOO.Week4Activity">
 
     <ImageButton
         android:id="@+id/back_button_main"
@@ -28,7 +28,7 @@
         android:textColor="@color/black"
         android:fontFamily="@font/fira_normal"
         android:textSize="28sp"
-        android:text="Introducción a la Programación Orientada a Objetos"
+        android:text="Interfaces y Clases Abstractas"
         android:textAlignment="center"
         app:layout_constraintStart_toEndOf="@id/back_button_main"
         app:layout_constraintEnd_toEndOf="parent"
@@ -45,7 +45,7 @@
         android:textColor="@color/black"
         android:fontFamily="@font/fira_normal"
         android:textSize="18sp"
-        android:text="La Programación Orientada a Objetos es un paradigma de programación que se basa en el concepto de 'objetos', los cuales representan entidades del mundo real y encapsulan tanto datos como funcionalidades relacionadas. "
+        android:text="Esta semana exploraremos dos conceptos avanzados y fundamentales de la Programación Orientada a Objetos (POO): interfaces y clases abstractas. Ambos nos permiten diseñar sistemas de software más flexibles y extensibles."
         android:textAlignment="center"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -62,7 +62,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/subhead">
 
-        
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -92,16 +92,16 @@
 
                         <ImageView
                             android:layout_width="match_parent"
-                            android:layout_height="200dp"
+                            android:layout_height="290dp"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/backclas" />
+                            android:src="@drawable/backinterfaces" />
 
                         <Button
                             android:id="@+id/clase1"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="8dp"
-                            android:text="CLASES"
+                            android:text="INTERFACES"
                             android:textColor="@color/white"
                             android:fontFamily="@font/fira_normal"
                             android:backgroundTint="@color/black"/>
@@ -120,7 +120,7 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             android:textAlignment="center"
-                            android:text="Las clases son plantillas para crear objetos y definen sus atributos (propiedades) y métodos (funciones). Una clase es como un molde para hacer cosas en la computadora. Imagina que quieres hacer figuras de plastilina: el molde te dice cómo hacerlas y qué características tienen."
+                            android:text="Una interfaz es un contrato que define un conjunto de métodos que una clase debe implementar. Las interfaces permiten la definición de capacidades comunes que diferentes clases pueden compartir, sin imponer una estructura específica. "
                             android:textSize="20sp"
                             android:textColor="@color/black" />
                         <Button
@@ -157,17 +157,17 @@
                         android:padding="16dp">
 
                         <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="200dp"
-                        android:scaleType="centerCrop"
-                        android:src="@drawable/backobj" />
+                            android:layout_width="match_parent"
+                            android:layout_height="300dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/backclasabst" />
 
                         <Button
                             android:id="@+id/clase2"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="8dp"
-                            android:text="OBJETOS"
+                            android:text="CLASES ABSTRACTAS"
                             android:textColor="@color/white"
                             android:fontFamily="@font/fira_normal"
                             android:backgroundTint="@color/black"/>
@@ -186,7 +186,7 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             android:textAlignment="center"
-                            android:text="Los objetos son instancias de clases que representan entidades del mundo real. Cada objeto tiene atributos (propiedades) con valores específicos y métodos (funciones) que definen su comportamiento. Los objetos permiten la interacción y manipulación de datos en un programa. Un objeto es como una figura de plastilina que hiciste usando un molde (clase). Cada objeto tiene sus propias características y puede hacer cosas especiales según lo que el molde (clase) le permite hacer."
+                            android:text="Las clases abstractas son clases que no pueden ser instanciadas por sí mismas. Contienen métodos que pueden tener una implementación predeterminada o ser declarados sin implementar (abstractos), dejando a las subclases la responsabilidad de proporcionar la implementación concreta."
                             android:textSize="20sp"
                             android:textColor="@color/black" />
                         <Button
@@ -223,16 +223,16 @@
 
                         <ImageView
                             android:layout_width="match_parent"
-                            android:layout_height="200dp"
+                            android:layout_height="240dp"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/backatri" />
+                            android:src="@drawable/backdifere" />
 
                         <Button
                             android:id="@+id/clase3"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="8dp"
-                            android:text="ATRIBUTOS"
+                            android:text="DIFERENCIAS"
                             android:textColor="@color/white"
                             android:fontFamily="@font/fira_normal"
                             android:backgroundTint="@color/black"/>
@@ -250,9 +250,10 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             android:textAlignment="center"
-                            android:text="Los atributos son características o datos que describen el estado de un objeto. Representan la información asociada a un objeto. Los atributos son como las características de una figura de plastilina. Representan las cualidades específicas de un objeto, como su color, tamaño o forma. Son las piezas de información que hacen que cada objeto sea único."
+                            android:text="@string/Diferencias_interfaces_clases"
                             android:textSize="20sp"
                             android:textColor="@color/black" />
+
                         <Button
                             android:id="@+id/back_button2"
                             android:layout_width="match_parent"
@@ -287,16 +288,16 @@
 
                         <ImageView
                             android:layout_width="match_parent"
-                            android:layout_height="200dp"
+                            android:layout_height="220dp"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/backmetod" />
+                            android:src="@drawable/backejeminabs" />
 
                         <Button
                             android:id="@+id/clase4"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="8dp"
-                            android:text="METODOS"
+                            android:text="EJEMPLOS"
                             android:textColor="@color/white"
                             android:fontFamily="@font/fira_normal"
                             android:backgroundTint="@color/black"/>
@@ -310,13 +311,17 @@
                         android:visibility="gone">
 
                         <TextView
-                            android:layout_width="wrap_content"
+                            android:id="@+id/codeTextView2"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:textAlignment="center"
-                            android:text="Los métodos son funciones que definen el comportamiento de un objeto. Pueden acceder y manipular los atributos del objeto, así como realizar acciones específicas. Los métodos son como las acciones que una figura de plastilina puede realizar según las instrucciones del molde. Determinan qué puede hacer un objeto y cómo puede interactuar con otros objetos. Son las funciones que definen el comportamiento y las capacidades de un objeto."
-                            android:textSize="20sp"
-                            android:textColor="@color/black" />
+                            android:padding="16dp"
+                            android:text="@string/ejemplo_interfaz"
+                            android:textColor="@android:color/white"
+                            android:background="@android:color/black"
+                            android:textSize="12sp"
+                            android:fontFamily="@font/fira_normal"
+                            android:scrollbars="vertical"
+                            android:gravity="start" />
                         <Button
                             android:id="@+id/back_button3"
                             android:layout_width="match_parent"
@@ -329,16 +334,6 @@
                 </FrameLayout>
             </androidx.cardview.widget.CardView>
 
-
-            <Button
-                android:id="@+id/clase5"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:text="IR A LA ACTIVIDAD"
-                android:textColor="@color/black"
-                android:fontFamily="@font/fira_normal"
-                android:backgroundTint="@color/teal_700"/>
 
 
         </LinearLayout>

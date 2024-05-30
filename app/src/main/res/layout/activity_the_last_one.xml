@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backGround">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/back_button_main"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:padding="8dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/buttonback"
+            android:contentDescription="Volver"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/textView2"
+            app:layout_constraintVertical_bias="0.5" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:fontFamily="@font/fira_normal"
+            android:textSize="28sp"
+            android:text="Bienvenido al CRAI"
+            android:textAlignment="center"
+            app:layout_constraintStart_toEndOf="@id/back_button_main"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/activity_subtitle"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintVertical_bias="0.5" />
+
+        <TextView
+            android:id="@+id/activity_subtitle"
+            style="@style/TextAppearance.MaterialComponents.Subtitle2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:fontFamily="@font/fira_normal"
+            android:textSize="18sp"
+            android:text="Se te da la bienvenida a la biblioteca virtual en la cual se te mostrara de una manera interactiva los conceptos que estudiaste previamente."
+            android:textAlignment="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView2"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintVertical_bias="0.5"/>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:src="@drawable/backactivity"
+            app:layout_constraintBottom_toTopOf="@+id/btnAgregar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/activity_subtitle"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/tituloEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:hint="Ingrese el titulo del Libro"
+            android:fontFamily="@font/fira_normal"
+            android:textColorHint="@color/black"
+            app:layout_constraintEnd_toEndOf="@+id/imageView"
+            app:layout_constraintStart_toStartOf="@+id/imageView"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+        <EditText
+            android:id="@+id/autorEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:hint="Ingrese el nombre del Autor"
+            android:textColorHint="@color/black"
+            android:fontFamily="@font/fira_normal"
+            app:layout_constraintEnd_toEndOf="@+id/tituloEditText"
+            app:layout_constraintStart_toStartOf="@+id/tituloEditText"
+            app:layout_constraintTop_toBottomOf="@+id/tituloEditText" />
+
+        <EditText
+            android:id="@+id/descEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:hint="Ingrese una breve descripción del libro"
+            android:fontFamily="@font/fira_normal"
+            android:textColorHint="@color/black"
+            app:layout_constraintEnd_toEndOf="@+id/autorEditText"
+            app:layout_constraintStart_toStartOf="@+id/autorEditText"
+            app:layout_constraintTop_toBottomOf="@+id/autorEditText" />
+
+        <Button
+            android:id="@+id/btnAgregar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Agregar un nuevo libro"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/teal_700"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/descEditText"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:id="@+id/agregarNuevoLibro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="@+id/btnAgregar"
+            app:layout_constraintStart_toStartOf="@+id/btnAgregar"
+            app:layout_constraintTop_toBottomOf="@+id/btnAgregar" />
+
+        <EditText
+            android:id="@+id/tituloPrestarEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:hint="Ingrese el titulo del Libro que quiere llevar"
+            android:fontFamily="@font/fira_normal"
+            android:textColorHint="@color/black"
+            app:layout_constraintEnd_toEndOf="@+id/agregarNuevoLibro"
+            app:layout_constraintStart_toStartOf="@+id/agregarNuevoLibro"
+            app:layout_constraintTop_toBottomOf="@+id/agregarNuevoLibro" />
+        <Button
+            android:id="@+id/btnPrestar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pedir prestado un libro"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/teal_700"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tituloPrestarEditText"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:id="@+id/descripcionPrestar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/black"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:textAlignment="center"
+            app:layout_constraintTop_toBottomOf="@+id/btnPrestar"
+            app:layout_constraintStart_toStartOf="@+id/btnPrestar"
+            app:layout_constraintEnd_toEndOf="@+id/btnPrestar"
+            android:layout_marginTop="8dp" />
+
+        <EditText
+            android:id="@+id/tituloDevolverEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:hint="Ingrese el titulo del Libro que quiere llevar"
+            android:fontFamily="@font/fira_normal"
+            android:textColorHint="@color/black"
+            app:layout_constraintEnd_toEndOf="@+id/descripcionPrestar"
+            app:layout_constraintStart_toStartOf="@+id/descripcionPrestar"
+            app:layout_constraintTop_toBottomOf="@+id/descripcionPrestar" />
+        <Button
+            android:id="@+id/btnDevolver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Devolver un Libro"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/teal_700"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tituloDevolverEditText"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:id="@+id/descripcionDevolver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/black"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:textAlignment="center"
+            app:layout_constraintTop_toBottomOf="@+id/btnDevolver"
+            app:layout_constraintStart_toStartOf="@+id/btnDevolver"
+            app:layout_constraintEnd_toEndOf="@+id/btnDevolver"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/btnMostrar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mostrar libros Existentes"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/teal_700"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/descripcionDevolver"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:id="@+id/descripcionMostrar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/black"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:textAlignment="center"
+            app:layout_constraintTop_toBottomOf="@+id/btnMostrar"
+            app:layout_constraintStart_toStartOf="@+id/btnMostrar"
+            app:layout_constraintEnd_toEndOf="@+id/btnMostrar"
+            android:layout_marginTop="8dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

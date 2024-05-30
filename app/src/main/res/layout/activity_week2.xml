@@ -102,6 +102,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="8dp"
                             android:text="HERENCIA"
+                            android:textColor="@color/white"
                             android:fontFamily="@font/fira_normal"
                             android:backgroundTint="@color/black"/>
                     </LinearLayout>
@@ -167,6 +168,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="8dp"
                             android:text="POLIMORFISMO"
+                            android:textColor="@color/white"
                             android:fontFamily="@font/fira_normal"
                             android:backgroundTint="@color/black"/>
 
@@ -231,6 +233,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="8dp"
                             android:text="EJEMPLO HERENCIA"
+                            android:textColor="@color/white"
                             android:fontFamily="@font/fira_normal"
                             android:backgroundTint="@color/black"/>
                     </LinearLayout>
@@ -299,6 +302,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="8dp"
                             android:text="EJEMPLO POLIMORFISMO"
+                            android:textColor="@color/white"
                             android:fontFamily="@font/fira_normal"
                             android:backgroundTint="@color/black"/>
                     </LinearLayout>

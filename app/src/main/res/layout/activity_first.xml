@@ -6,6 +6,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".classProgramming.weeksPOO.FirstActivity">
 
     <ImageButton
@@ -85,7 +86,7 @@
             android:layout_marginVertical="8dp"
             android:text="Clase"
             android:backgroundTint="@color/teal_700"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:fontFamily="@font/fira_normal" />
 
         <Button
@@ -95,7 +96,7 @@
             android:layout_marginVertical="8dp"
             android:text="Objeto"
             android:backgroundTint="@color/teal_700"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:fontFamily="@font/fira_normal" />
 
         <Button
@@ -105,7 +106,7 @@
             android:layout_marginVertical="8dp"
             android:text="Atributo"
             android:backgroundTint="@color/teal_700"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:fontFamily="@font/fira_normal" />
 
         <Button
@@ -115,7 +116,7 @@
             android:layout_marginVertical="8dp"
             android:text="Método"
             android:backgroundTint="@color/teal_700"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:fontFamily="@font/fira_normal" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

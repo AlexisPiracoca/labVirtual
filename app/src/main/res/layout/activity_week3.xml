@@ -7,7 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".classProgramming.weeksPOO.Week1Activity">
+    tools:context=".classProgramming.weeksPOO.Week3Activity">
 
     <ImageButton
         android:id="@+id/back_button_main"
@@ -28,7 +28,7 @@
         android:textColor="@color/black"
         android:fontFamily="@font/fira_normal"
         android:textSize="28sp"
-        android:text="Introducción a la Programación Orientada a Objetos"
+        android:text="Encapsulamiento y Modificadores de Acceso"
         android:textAlignment="center"
         app:layout_constraintStart_toEndOf="@id/back_button_main"
         app:layout_constraintEnd_toEndOf="parent"
@@ -45,7 +45,7 @@
         android:textColor="@color/black"
         android:fontFamily="@font/fira_normal"
         android:textSize="18sp"
-        android:text="La Programación Orientada a Objetos es un paradigma de programación que se basa en el concepto de 'objetos', los cuales representan entidades del mundo real y encapsulan tanto datos como funcionalidades relacionadas. "
+        android:text="Esta semana nos adentraremos en dos conceptos fundamentales de la Programación Orientada a Objetos (POO): encapsulamiento y modificadores de acceso."
         android:textAlignment="center"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -62,7 +62,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/subhead">
 
-        
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -92,16 +92,16 @@
 
                         <ImageView
                             android:layout_width="match_parent"
-                            android:layout_height="200dp"
+                            android:layout_height="210dp"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/backclas" />
+                            android:src="@drawable/backencap" />
 
                         <Button
                             android:id="@+id/clase1"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="8dp"
-                            android:text="CLASES"
+                            android:text="ENCAPSULAMIENTO"
                             android:textColor="@color/white"
                             android:fontFamily="@font/fira_normal"
                             android:backgroundTint="@color/black"/>
@@ -120,7 +120,7 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             android:textAlignment="center"
-                            android:text="Las clases son plantillas para crear objetos y definen sus atributos (propiedades) y métodos (funciones). Una clase es como un molde para hacer cosas en la computadora. Imagina que quieres hacer figuras de plastilina: el molde te dice cómo hacerlas y qué características tienen."
+                            android:text="El encapsulamiento es una caja que protege las partes internas de un objeto. Solo permite que se acceda a los atributos y métodos de un objeto de manera controlada, evitando cambios no deseados y manteniendo la integridad de los datos."
                             android:textSize="20sp"
                             android:textColor="@color/black" />
                         <Button
@@ -157,17 +157,17 @@
                         android:padding="16dp">
 
                         <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="200dp"
-                        android:scaleType="centerCrop"
-                        android:src="@drawable/backobj" />
+                            android:layout_width="match_parent"
+                            android:layout_height="220dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/backmod" />
 
                         <Button
                             android:id="@+id/clase2"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="8dp"
-                            android:text="OBJETOS"
+                            android:text="MODIFICADORES DE ACCESO"
                             android:textColor="@color/white"
                             android:fontFamily="@font/fira_normal"
                             android:backgroundTint="@color/black"/>
@@ -186,7 +186,7 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             android:textAlignment="center"
-                            android:text="Los objetos son instancias de clases que representan entidades del mundo real. Cada objeto tiene atributos (propiedades) con valores específicos y métodos (funciones) que definen su comportamiento. Los objetos permiten la interacción y manipulación de datos en un programa. Un objeto es como una figura de plastilina que hiciste usando un molde (clase). Cada objeto tiene sus propias características y puede hacer cosas especiales según lo que el molde (clase) le permite hacer."
+                            android:text="Los modificadores de acceso son las reglas de acceso a la caja (encapsulamiento). Determinan quién puede ver o modificar los atributos y métodos de un objeto."
                             android:textSize="20sp"
                             android:textColor="@color/black" />
                         <Button
@@ -223,16 +223,16 @@
 
                         <ImageView
                             android:layout_width="match_parent"
-                            android:layout_height="200dp"
+                            android:layout_height="240dp"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/backatri" />
+                            android:src="@drawable/backejemencap" />
 
                         <Button
                             android:id="@+id/clase3"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="8dp"
-                            android:text="ATRIBUTOS"
+                            android:text="EJEMPLO ENCAPSULAMIENTO"
                             android:textColor="@color/white"
                             android:fontFamily="@font/fira_normal"
                             android:backgroundTint="@color/black"/>
@@ -246,13 +246,18 @@
                         android:visibility="gone">
 
                         <TextView
-                            android:layout_width="wrap_content"
+                            android:id="@+id/codeTextView"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:textAlignment="center"
-                            android:text="Los atributos son características o datos que describen el estado de un objeto. Representan la información asociada a un objeto. Los atributos son como las características de una figura de plastilina. Representan las cualidades específicas de un objeto, como su color, tamaño o forma. Son las piezas de información que hacen que cada objeto sea único."
-                            android:textSize="20sp"
-                            android:textColor="@color/black" />
+                            android:padding="16dp"
+                            android:text="@string/ejemplo_encapsulamiento"
+                            android:textColor="@android:color/white"
+                            android:background="@android:color/black"
+                            android:textSize="12sp"
+                            android:fontFamily="@font/fira_normal"
+                            android:scrollbars="vertical"
+                            android:gravity="start" />
+
                         <Button
                             android:id="@+id/back_button2"
                             android:layout_width="match_parent"
@@ -287,16 +292,16 @@
 
                         <ImageView
                             android:layout_width="match_parent"
-                            android:layout_height="200dp"
+                            android:layout_height="220dp"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/backmetod" />
+                            android:src="@drawable/backejemmod" />
 
                         <Button
                             android:id="@+id/clase4"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="8dp"
-                            android:text="METODOS"
+                            android:text="TIPOS DE MODIFICADORES DE ACCESO"
                             android:textColor="@color/white"
                             android:fontFamily="@font/fira_normal"
                             android:backgroundTint="@color/black"/>
@@ -310,13 +315,17 @@
                         android:visibility="gone">
 
                         <TextView
-                            android:layout_width="wrap_content"
+                            android:id="@+id/codeTextView2"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:textAlignment="center"
-                            android:text="Los métodos son funciones que definen el comportamiento de un objeto. Pueden acceder y manipular los atributos del objeto, así como realizar acciones específicas. Los métodos son como las acciones que una figura de plastilina puede realizar según las instrucciones del molde. Determinan qué puede hacer un objeto y cómo puede interactuar con otros objetos. Son las funciones que definen el comportamiento y las capacidades de un objeto."
-                            android:textSize="20sp"
-                            android:textColor="@color/black" />
+                            android:padding="16dp"
+                            android:text="@string/tipos_modificadores_acceso"
+                            android:textColor="@android:color/white"
+                            android:background="@android:color/black"
+                            android:textSize="12sp"
+                            android:fontFamily="@font/fira_normal"
+                            android:scrollbars="vertical"
+                            android:gravity="start" />
                         <Button
                             android:id="@+id/back_button3"
                             android:layout_width="match_parent"
@@ -329,16 +338,6 @@
                 </FrameLayout>
             </androidx.cardview.widget.CardView>
 
-
-            <Button
-                android:id="@+id/clase5"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:text="IR A LA ACTIVIDAD"
-                android:textColor="@color/black"
-                android:fontFamily="@font/fira_normal"
-                android:backgroundTint="@color/teal_700"/>
 
 
         </LinearLayout>

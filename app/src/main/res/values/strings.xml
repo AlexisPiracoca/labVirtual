@@ -52,7 +52,6 @@
     <string name="activity_week1">ActivityWeek1</string>
 
 
-
     <!-- Brandon -->
     <!-- ejemplo variable  -->
     <string name="codigo_variables">
@@ -198,8 +197,6 @@ public class Arreglos {\n
 </string>
 
 
-
-
     <!-- EJEMPLOS PARA HERENCIA Y POLIMORFISMO -->
 
     <string name="ejemplo_herencia">class Vehiculo {\n\tString marca;\n\tint año;\n\n\tvoid encender() {\n\t\tSystem.out.println("El vehículo está encendido");\n\t}\n}\n\nclass Coche extends Vehiculo {\n\tint numPuertas;\n\n\tvoid tocarClaxon() {\n\t\tSystem.out.println("El coche está tocando el claxon");\n\t}\n}\n\npublic class HerenciaEjemplo {\n\tpublic static void main(String[] args) {\n\t\tCoche miCoche = new Coche();\n\t\tmiCoche.marca = "Toyota";\n\t\tmiCoche.año = 2021;\n\t\tmiCoche.numPuertas = 4;\n\t\tmiCoche.encender();\n\t\tmiCoche.tocarClaxon();\n\t}\n}</string>
@@ -243,4 +240,221 @@ public class Arreglos {\n
         <item>El animal hace un sonido</item>
         <item>Ninguna de las anteriores</item>
     </string-array>
+
+
+    <!-- EJEMPLOS PARA ENCAPSULAMIENTO  Y MODIFICADORES DE ACCESO -->
+
+    <string name="ejemplo_encapsulamiento">
+class Coche {\n
+\tprivate String marca;\n
+\tprivate String modelo;\n\n
+\tpublic Coche(String marca, String modelo) {\n
+\t\tthis.marca = marca;\n
+\t\tthis.modelo = modelo;\n
+\t}\n\n
+\tpublic String obtenerInfo() {\n
+\t\treturn "Marca: " + marca + ", Modelo: " + modelo;\n
+\t}\n\n
+\tpublic void actualizarModelo(String nuevoModelo) {\n
+\t\tthis.modelo = nuevoModelo;\n
+\t}\n
+}\n\n
+public class EncapsulamientoEjemplo {\n
+\tpublic static void main(String[] args) {\n
+\t\tCoche miCoche = new Coche("Toyota", "Corolla");\n\n
+\t\tSystem.out.println(miCoche.obtenerInfo()); // Marca: Toyota, Modelo: Corolla\n\n
+\t\tmiCoche.actualizarModelo("Camry");\n\n
+\t\tSystem.out.println(miCoche.obtenerInfo()); // Marca: Toyota, Modelo: Camry\n\n
+\t}\n
+}
+</string>
+
+    <string name="tipos_modificadores_acceso">
+class Ejemplo {\n
+\tpublic String atributoPublico;\n
+\tprotected String atributoProtegido;\n
+\tprivate String atributoPrivado;\n\n
+\tpublic Ejemplo(String publico, String protegido, String privado) {\n\n
+\t\tthis.atributoPublico = publico;\n
+\t\tthis.atributoProtegido = protegido;\n
+\t\tthis.atributoPrivado = privado;\n
+\t}\n\n
+\tpublic String metodoPublico() {\n
+\t\treturn "Este es un método público";\n
+\t}\n\n
+\tprotected String metodoProtegido() {\n
+\t\treturn "Este es un método protegido";\n
+\t}\n\n
+\tprivate String metodoPrivado() {\n
+\t\treturn "Este es un método privado";\n
+\t}\n
+}\n\n
+public class ModificadoresAcceso {\n
+\tpublic static void main(String[] args) {\n
+\t\tEjemplo obj = new Ejemplo("valor público", "valor protegido", "valor privado");\n\n
+\t\t// Acceso a atributos\n\n
+\t\tSystem.out.println(obj.atributoPublico);  // Acceso permitido: valor público\n\n
+\t\tSystem.out.println(obj.atributoProtegido);  // Acceso permitido dentro del mismo paquete o subclase: valor protegido\n\n
+\t\t// System.out.println(obj.atributoPrivado);  // Error: atributo privado no accesible directamente\n\n
+\t\t// Acceso a métodos\n\n
+\t\tSystem.out.println(obj.metodoPublico());  // Acceso permitido: Este es un método público\n\n
+\t\tSystem.out.println(obj.metodoProtegido());  // Acceso permitido dentro del mismo paquete o subclase: Este es un método protegido\n\n
+\t\t// System.out.println(obj.metodoPrivado());  // Error: método privado no accesible directamente\n\n
+\t}\n
+}
+</string>
+
+    <!-- DIFERENCIAS CLASES ABSTRACTAS Y INTERFACES -->
+
+    <string name="Diferencias_interfaces_clases">
+
+        Interfaces: Todos los métodos son abstractos (sin implementación) y
+        las clases pueden implementar múltiples interfaces.   Son esenciales para
+        crear código desacoplado y permitir la implementación de múltiples comportamientos
+        en diferentes clases. \n\n
+
+        Clases Abstractas: Pueden contener tanto métodos abstractos como métodos con
+        implementación y las clases pueden heredar de una sola clase abstracta.
+        Las clases abstractas son útiles para compartir código común entre varias clases y definir
+        una estructura base para futuras extensiones.
+    </string>
+
+    <!-- EJEMPLO INTERFAZ Y CLASES ABSTRACTAS -->
+
+    <string name="ejemplo_interfaz">
+// Definición de la interfaz\n
+interface Volador {\n
+\tvoid volar();\n
+}\n\n
+// Clase que implementa la interfaz\n
+class Pajaro implements Volador {\n
+\t@Override\n
+\tpublic void volar() {\n
+\t\tSystem.out.println("El pájaro está volando");\n
+\t}\n
+}\n\n
+// Clase que utiliza la interfaz\n
+public class EjemploInterfaz {\n
+\tpublic static void main(String[] args) {\n
+\t\tPajaro miPajaro = new Pajaro();\n\n
+\t\tmiPajaro.volar();  // Salida: El pájaro está volando\n
+\t}\n\n\n\n\n\n
+        // Definición de la clase abstracta\n
+abstract class Figura {\n
+\tprotected double lado;\n\n
+\tpublic Figura(double lado) {\n
+\t\tthis.lado = lado;\n
+\t}\n\n
+\t// Método abstracto que debe ser implementado por las subclases\n
+\tabstract double calcularArea();\n
+}\n\n
+// Subclase que extiende la clase abstracta\n
+class Cuadrado extends Figura {\n
+\tpublic Cuadrado(double lado) {\n
+\t\tsuper(lado);\n
+\t}\n\n
+\t// Implementación del método abstracto\n
+\t@Override\n
+\tdouble calcularArea() {\n
+\t\treturn lado * lado;\n
+\t}\n
+}\n\n
+// Subclase adicional que extiende la clase abstracta\n
+class Circulo extends Figura {\n
+\tpublic Circulo(double radio) {\n
+\t\tsuper(radio);\n
+\t}\n\n
+\t// Implementación del método abstracto\n
+\t@Override\n
+\tdouble calcularArea() {\n
+\t\treturn Math.PI * lado * lado;\n
+\t}\n
+}\n\n
+// Clase que utiliza las subclases\n
+public class EjemploClaseAbstracta {\n
+\tpublic static void main(String[] args) {\n
+\t\tCuadrado cuadrado = new Cuadrado(5);\n
+\t\tCirculo circulo = new Circulo(3);\n\n
+\t\tSystem.out.println("Área del cuadrado: " + cuadrado.calcularArea());  // Salida: Área del cuadrado: 25.0\n\n
+\t\tSystem.out.println("Área del círculo: " + circulo.calcularArea());    // Salida: Área del círculo: 28.274333882308138\n\n
+\t}\n
+}
+}
+</string>
+
+    <!-- ERRORES COMUNES -->
+    <string name="errores_comunes">
+        1. Errores de Sintaxis (Syntax Errors):\n
+   Estos errores ocurren cuando el código viola las reglas gramaticales del lenguaje Java. \n
+   Ejemplo: Falta un punto y coma al final de una declaración, se usan paréntesis que no están balanceados, etc.\n\n
+
+2. Errores de Tiempo de Ejecución (Runtime Errors):\n
+   Estos errores ocurren durante la ejecución del programa y son causados por condiciones que ocurren en tiempo de ejecución.\n
+   Ejemplo: División por cero, acceso a un índice inválido en un array, referencia a un objeto nulo, etc.\n\n
+
+3. Errores de Lógica (Logic Errors):\n
+   Estos errores ocurren cuando el programa no produce los resultados esperados debido a un error en el diseño o la lógica del programa.\n
+   Ejemplo: Un algoritmo que produce resultados incorrectos debido a una implementación incorrecta.\n\n
+
+4. Errores de Semántica (Semantic Errors):\n
+   Estos errores ocurren cuando el código compila sin errores, pero produce resultados no deseados debido a una comprensión incorrecta de los requisitos del programa.\n
+   Ejemplo: La interpretación incorrecta de los requisitos del cliente puede llevar a la implementación de una funcionalidad incorrecta.\n\n
+
+</string>
+
+
+    <string name="gestion_errores_java">
+
+Gestión de Errores en Java:\n
+
+1. Declaración try-catch:\n
+   La declaración try-catch se utiliza para manejar excepciones en Java. El código propenso a errores se coloca dentro del bloque try y las excepciones se manejan en uno o más bloques catch.\n\n
+   Ejemplo:\n
+     ```java\n
+     try {\n
+          \t// Código propenso a errores\n
+     } catch (Excepcion1 e) {\n
+         \t// Manejar la excepción Excepcion1\n
+     } catch (Excepcion2 e) {\n
+         \t// Manejar la excepción Excepcion2\n
+     } finally {
+         \t// Bloque opcional que se ejecuta siempre, incluso si no se produce una excepción\n
+     }\n\n
+
+
+2. Declaración throw:\n
+    La declaración throw se utiliza para lanzar una excepción manualmente dentro de un método.\n\n
+   Ejemplo:\n
+     ```java\n
+     void metodo() throws MiExcepcion {\n
+         \tif (condicion) {\n
+             \t\tthrow new MiExcepcion("Mensaje de error");\n
+         \t}\n
+     }\n\n
+
+
+3. Cláusula finally:\n
+   La cláusula finally se utiliza para ejecutar un bloque de código después de que se complete el bloque try-catch, independientemente de si se produce una excepción o no.\n\n
+   Ejemplo:\n
+     ```java\n
+     try {\n
+         \t// Código propenso a erroresv
+     } catch (Excepcion e) {\n
+         \t// Manejar la excepción\n
+     } finally {\n
+         \t// Código que se ejecuta siempre\n
+     }\n\n
+
+
+4. Creación de Excepciones Personalizadas:
+   En Java, es posible crear excepciones personalizadas extendiendo la clase Exception o alguna de sus subclases, como RuntimeException.\n\n
+   Ejemplo:\n
+     ```java\n
+     class MiExcepcion extends Exception {\n
+         \tpublic MiExcepcion(String mensaje) {v
+             \t\tsuper(mensaje);\n
+         \t}v
+     }\n\n
+
+</string>
 </resources>

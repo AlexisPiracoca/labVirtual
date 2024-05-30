@@ -14,11 +14,13 @@ import androidx.core.view.WindowInsetsCompat
 import androidx.core.view.updatePadding
 import com.usta.laboratoriovirtual.R
 import com.usta.laboratoriovirtual.classProgramming.PooClassScreen
-import com.usta.laboratoriovirtual.databinding.ActivityWeek2Binding
 
-class Week2Activity : AppCompatActivity() {
 
-    private lateinit var binding: ActivityWeek2Binding
+import com.usta.laboratoriovirtual.databinding.ActivityWeek5Binding
+
+class Week5Activity : AppCompatActivity() {
+
+    private lateinit var binding: ActivityWeek5Binding
     private var isFrontVisible1 = true
     private var isFrontVisible2 = true
     private var isFrontVisible3 = true
@@ -26,24 +28,17 @@ class Week2Activity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        binding = ActivityWeek2Binding.inflate(layoutInflater)
+        binding = ActivityWeek5Binding.inflate(layoutInflater)
         setContentView(binding.root)
 
         val btnBack = findViewById<ImageButton>(R.id.back_button_main)
-        val btnGoActivity = findViewById<Button>(R.id.clase5)
+
 
         btnBack.setOnClickListener{
             val intent = Intent(this, PooClassScreen::class.java)
             startActivity(intent)
             finish()
         }
-
-        btnGoActivity.setOnClickListener{
-            val intent = Intent(this, SecondActivity::class.java)
-            startActivity(intent)
-            finish()
-        }
-
 
         ViewCompat.setOnApplyWindowInsetsListener(binding.root) { view, insets ->
             val systemInsets = insets.getInsets(WindowInsetsCompat.Type.systemBars())
@@ -126,7 +121,7 @@ class Week2Activity : AppCompatActivity() {
             override fun onAnimationRepeat(animation: Animation?) {}
         })
 
-        //Herencia
+        //Encapsulamiento
         binding.cardContainer.findViewById<Button>(R.id.clase1).setOnClickListener {
             binding.cardContainer.startAnimation(flipOut1)
         }
@@ -135,7 +130,7 @@ class Week2Activity : AppCompatActivity() {
             binding.cardContainer.startAnimation(flipOut1)
         }
 
-        //Polimorfismo
+        //Modificadores de acceso
         binding.cardContainer1.findViewById<Button>(R.id.clase2).setOnClickListener {
             binding.cardContainer1.startAnimation(flipOut2)
         }
@@ -144,7 +139,7 @@ class Week2Activity : AppCompatActivity() {
             binding.cardContainer1.startAnimation(flipOut2)
         }
 
-        //Ejemplo Herencia
+        //Ejemplo Encapsulamiento
         binding.cardContainer2.findViewById<Button>(R.id.clase3).setOnClickListener {
             binding.cardContainer2.startAnimation(flipOut3)
         }
@@ -152,7 +147,7 @@ class Week2Activity : AppCompatActivity() {
         binding.cardContainer2.findViewById<Button>(R.id.back_button2).setOnClickListener {
             binding.cardContainer2.startAnimation(flipOut3)
         }
-        //Ejemplo polimorfismo
+        //Tipos de MOdificadores de acceso
 
         binding.cardContainer3.findViewById<Button>(R.id.clase4).setOnClickListener {
             binding.cardContainer3.startAnimation(flipOut4)

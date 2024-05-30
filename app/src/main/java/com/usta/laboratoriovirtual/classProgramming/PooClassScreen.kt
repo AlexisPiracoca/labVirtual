@@ -34,8 +34,12 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.usta.laboratoriovirtual.classProgramming.weeksPOO.TheLastOneActivity
 import com.usta.laboratoriovirtual.classProgramming.weeksPOO.Week1Activity
 import com.usta.laboratoriovirtual.classProgramming.weeksPOO.Week2Activity
+import com.usta.laboratoriovirtual.classProgramming.weeksPOO.Week3Activity
+import com.usta.laboratoriovirtual.classProgramming.weeksPOO.Week4Activity
+import com.usta.laboratoriovirtual.classProgramming.weeksPOO.Week5Activity
 import com.usta.laboratoriovirtual.classRoom.ClassProgrammingScreen
 import com.usta.laboratoriovirtual.ui.theme.LaboratorioVirtualTheme
 
@@ -122,7 +126,9 @@ private fun MainScreen() {
         CourseCard(
             title = "Semana 3",
             progress = 0.3f,
-            onClick = {  }
+            onClick = { val intent = Intent(context, Week3Activity::class.java)
+                context.startActivity(intent)
+                (context as? Activity)?.finish() }
         )
 
         Spacer(modifier = Modifier.height(16.dp))
@@ -130,7 +136,9 @@ private fun MainScreen() {
         CourseCard(
             title = "Semana 4",
             progress = 0.5f,
-            onClick = { }
+            onClick = { val intent = Intent(context, Week4Activity::class.java)
+                context.startActivity(intent)
+                (context as? Activity)?.finish() }
         )
 
         Spacer(modifier = Modifier.height(16.dp))
@@ -138,7 +146,19 @@ private fun MainScreen() {
         CourseCard(
             title = "Semana 5",
             progress = 0.7f,
-            onClick = {  }
+            onClick = { val intent = Intent(context, Week5Activity::class.java)
+                context.startActivity(intent)
+                (context as? Activity)?.finish() }
+        )
+
+        Spacer(modifier = Modifier.height(16.dp))
+
+        CourseCard(
+            title = "Actividad Final",
+            progress = 0.7f,
+            onClick = { val intent = Intent(context, TheLastOneActivity::class.java)
+                context.startActivity(intent)
+                (context as? Activity)?.finish() }
         )
     }
 }
