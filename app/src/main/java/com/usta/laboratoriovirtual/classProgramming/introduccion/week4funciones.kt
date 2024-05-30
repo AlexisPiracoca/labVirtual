@@ -30,7 +30,7 @@ class week4funciones : AppCompatActivity() {
         opcion3funcion = findViewById(R.id.opcion3funcion)
         opcion4funcion = findViewById(R.id.opcion4funcion)
         siguientearreglos = findViewById(R.id.siguientearreglos)
-        home4 = findViewById(R.id.home4)
+        home4 = findViewById(R.id.home1)
 
         home4.setOnClickListener { navigateTohome() }
 

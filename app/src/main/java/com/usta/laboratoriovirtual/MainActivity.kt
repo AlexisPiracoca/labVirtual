@@ -19,7 +19,7 @@ class MainActivity : ComponentActivity() {
             LaboratorioVirtualTheme {
                 Surface(
                     modifier = Modifier.fillMaxSize(),
-                    color = Color(0xFFb4f4f9)
+                    color = Color(0xFFDEFEFD)
                 ) {
                     LoginScreen()
                 }

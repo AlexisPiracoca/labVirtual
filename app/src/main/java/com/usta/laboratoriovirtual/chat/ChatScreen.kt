@@ -141,11 +141,18 @@ class ChatScreen : ComponentActivity() {
                                     }
                                 }
                                 prompt.text.equals("como cambio la contraseña del campus virtual", ignoreCase = true) ||
+                                        prompt.text.equals("cómo cambio la contraseña del campus virtual", ignoreCase = true) ||
+                                        prompt.text.equals("cómo cambio la contraseña", ignoreCase = true) ||
+                                        prompt.text.equals("como cambio la contraseña", ignoreCase = true) ||
                                         prompt.text.equals("cambiar la contraseña del campus virtual", ignoreCase = true) ||
+                                        prompt.text.equals("como cambiar la contraseña", ignoreCase = true) ||
+                                        prompt.text.equals("cómo cambiar la contraseña", ignoreCase = true) ||
                                         prompt.text.equals("como cambiar contraseña", ignoreCase = true) ||
+                                        prompt.text.equals("cómo cambiar contraseña", ignoreCase = true) ||
                                         prompt.text.equals("cambio contraseña", ignoreCase = true) ||
                                         prompt.text.equals("dime como puedo cambiar contraseña del campus", ignoreCase = true) ||
-                                        prompt.text.equals("como puedo cambiar la contraseña", ignoreCase = true) -> {
+                                        prompt.text.equals("como puedo cambiar la contraseña", ignoreCase = true) ||
+                                        prompt.text.equals("cómo puedo cambiar la contraseña", ignoreCase = true)-> {
                                     responseText = "Para cambiar la contraseña del campus debes ingresar a la sección de perfil, luego preferencias y damos en cambiar contraseña."
                                     displayedText = ""
                                     for (i in responseText.indices) {
@@ -164,6 +171,7 @@ class ChatScreen : ComponentActivity() {
                                     }
                                 }
                                 prompt.text.equals("olvidé mi contraseña", ignoreCase = true) ||
+                                        prompt.text.equals("olvide mi contraseña", ignoreCase = true) ||
                                         prompt.text.equals("no recuerdo mi contraseña", ignoreCase = true) ||
                                         prompt.text.equals("recuperar contraseña", ignoreCase = true) -> {
                                     responseText = "Si has olvidado tu contraseña, puedes recuperarla haciendo clic en '¿Olvidaste tu contraseña?' en la página de inicio de sesión y siguiendo las instrucciones."
@@ -174,7 +182,8 @@ class ChatScreen : ComponentActivity() {
                                     }
                                 }
                                 prompt.text.equals("requisitos para la nueva contraseña", ignoreCase = true) ||
-                                        prompt.text.equals("cuáles son los requisitos para la contraseña", ignoreCase = true) -> {
+                                        prompt.text.equals("cuáles son los requisitos para la contraseña", ignoreCase = true) ||
+                                        prompt.text.equals("cuales son los requisitos para la contraseña", ignoreCase = true) -> {
                                     responseText = "Asegúrate de que tu nueva contraseña cumpla con los requisitos: debe tener al menos 8 caracteres, incluir una letra mayúscula, una letra minúscula, un número y un carácter especial."
                                     displayedText = ""
                                     for (i in responseText.indices) {
@@ -183,6 +192,7 @@ class ChatScreen : ComponentActivity() {
                                     }
                                 }
                                 prompt.text.equals("con qué frecuencia debo cambiar mi contraseña", ignoreCase = true) ||
+                                        prompt.text.equals("con que frecuencia debo cambiar mi contraseña", ignoreCase = true) ||
                                         prompt.text.equals("cada cuánto cambiar contraseña", ignoreCase = true) -> {
                                     responseText = "Se recomienda cambiar tu contraseña cada 3-6 meses para mantener la seguridad de tu cuenta."
                                     displayedText = ""
@@ -192,6 +202,7 @@ class ChatScreen : ComponentActivity() {
                                     }
                                 }
                                 prompt.text.equals("cómo crear una contraseña segura", ignoreCase = true) ||
+                                        prompt.text.equals("como crear una contraseña segura", ignoreCase = true) ||
                                         prompt.text.equals("consejos para una contraseña segura", ignoreCase = true) -> {
                                     responseText = "Para crear una contraseña segura, usa una combinación de letras mayúsculas y minúsculas, números y caracteres especiales. Evita usar información personal como nombres o fechas de nacimiento."
                                     displayedText = ""
@@ -214,7 +225,11 @@ class ChatScreen : ComponentActivity() {
                                 prompt.text.equals("como ingreso al campus virtual", ignoreCase = true) ||
                                         prompt.text.equals("dime como ingresar al campus virtual", ignoreCase = true) ||
                                         prompt.text.equals("como puedo ingresar al campus virtual", ignoreCase = true) ||
-                                        prompt.text.equals("ingresar al campus virtual", ignoreCase = true) -> {
+                                        prompt.text.equals("ingresar al campus virtual", ignoreCase = true) ||
+                                        prompt.text.equals("como ingreso al campus", ignoreCase = true) ||
+                                        prompt.text.equals("cómo puedo ingresar al campus", ignoreCase = true) ||
+                                        prompt.text.equals("cómo ingreso al campus virtual", ignoreCase = true) ||
+                                        prompt.text.equals("cómo ingreso al campus", ignoreCase = true)-> {
                                     responseText = "Para ingresar al campus virtual debes ir a la siguiente url: https://plataformalms.ustatunja.edu.co/login/index.php"
                                     displayedText = ""
                                     for (i in responseText.indices) {

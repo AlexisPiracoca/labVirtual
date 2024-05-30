@@ -148,22 +148,22 @@ private fun CourseCard(title: String, imageResource: Int, progress: Float, onCli
 
             Text(text = title, fontSize = 18.sp)
 
-            Spacer(modifier = Modifier.height(8.dp))
-            Text(
-                "Progreso",
-                fontSize = 14.sp,
-                color = Color.Black,
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .wrapContentWidth(Alignment.Start)
-            )
-            LinearProgressIndicator(
-                progress = progress,
-                color = Color.Green,
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .height(4.dp)
-            )
+//          Spacer(modifier = Modifier.height(8.dp))
+//            Text(
+//                "Progreso",
+//                fontSize = 14.sp,
+//                color = Color.Black,
+//                modifier = Modifier
+//                    .fillMaxWidth()
+//                    .wrapContentWidth(Alignment.Start)
+//            )
+//            LinearProgressIndicator(
+//                progress = progress,
+//                color = Color.Green,
+//                modifier = Modifier
+//                    .fillMaxWidth()
+//                    .height(4.dp)
+//            )
         }
     }
 }

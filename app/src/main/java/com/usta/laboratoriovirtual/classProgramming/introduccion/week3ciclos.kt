@@ -31,7 +31,7 @@ class week3ciclos : AppCompatActivity() {
         opcion3ciclo = findViewById(R.id.opcion3ciclo)
         opcion4ciclo = findViewById(R.id.opcion4ciclo)
         siguienteciclos = findViewById(R.id.siguienteciclos)
-        home3 = findViewById(R.id.home3)
+        home3 = findViewById(R.id.home1)
 
         home3.setOnClickListener { navigateTohome() }
 

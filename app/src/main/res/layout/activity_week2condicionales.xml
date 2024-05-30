@@ -21,11 +21,13 @@
 
 
             <ImageButton
-                android:id="@+id/home2"
+                android:id="@+id/home1"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_centerInParent="true"
-                android:background="@drawable/home"/>
+                android:src="@drawable/buttonback"
+                android:background="#52262627"
+                app:tint="@color/white"/>
 
 
             <TextView
@@ -197,6 +199,7 @@
                         android:layout_margin="15dp"
                         android:backgroundTint="@color/blue"
                         android:layout_weight="1"
+                        android:textColor="@color/white"
                         android:text="Eres Mayor de Edad" />
 
 
@@ -207,6 +210,7 @@
                         android:layout_margin="15dp"
                         android:backgroundTint="@color/blue"
                         android:layout_weight="1"
+                        android:textColor="@color/white"
                         android:text="Eres Menor de Edad" />
 
 
@@ -221,6 +225,7 @@
                     android:backgroundTint="@color/blue"
                     android:layout_weight="1"
                     android:visibility="gone"
+                    android:textColor="@color/white"
                     android:text="Siguiente" />
 
 

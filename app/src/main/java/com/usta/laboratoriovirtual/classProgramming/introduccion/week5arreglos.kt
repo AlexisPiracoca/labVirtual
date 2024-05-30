@@ -31,7 +31,7 @@ class week5arreglos : AppCompatActivity() {
         opcion3arreglo = findViewById(R.id.opcion3arreglo)
         opcion4arreglo = findViewById(R.id.opcion4arreglo)
         siguientearreglos = findViewById(R.id.siguientehome)
-        home5 = findViewById(R.id.home5)
+        home5 = findViewById(R.id.home1)
 
         home5.setOnClickListener { navigateTohome() }
 

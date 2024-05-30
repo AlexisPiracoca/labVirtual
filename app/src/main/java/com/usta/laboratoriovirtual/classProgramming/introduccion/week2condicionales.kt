@@ -27,7 +27,7 @@ class week2condicionales : AppCompatActivity() {
         opcion1condicional = findViewById(R.id.opcion1condicional)
         opcion2condicional = findViewById(R.id.opcion2condicional)
         siguientecondicionales = findViewById(R.id.siguientecondicionales)
-        home2 = findViewById(R.id.home2)
+        home2 = findViewById(R.id.home1)
 
         home2.setOnClickListener { navigateTohome() }
 

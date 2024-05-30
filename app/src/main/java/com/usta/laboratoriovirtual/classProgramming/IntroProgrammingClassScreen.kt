@@ -91,7 +91,7 @@ private fun MainScreen() {
         Spacer(modifier = Modifier.height(16.dp))
 
         CourseCard(
-            title = "Variables",
+            title = "Semana 1",
             progress = 0.7f,
             onClick = {val intent = Intent(context, week1introduction::class.java)
                 context.startActivity(intent)
@@ -101,7 +101,7 @@ private fun MainScreen() {
         Spacer(modifier = Modifier.height(16.dp))
 
         CourseCard(
-            title = "Condicionales",
+            title = "Semana 2",
             progress = 0.5f,
             onClick = {val intent = Intent(context, week2condicionales::class.java)
                 context.startActivity(intent)
@@ -111,7 +111,7 @@ private fun MainScreen() {
         Spacer(modifier = Modifier.height(16.dp))
 
         CourseCard(
-            title = "Ciclos",
+            title = "Semana 3",
             progress = 0.3f,
             onClick = {val intent = Intent(context, week3ciclos::class.java)
                 context.startActivity(intent)
@@ -121,7 +121,7 @@ private fun MainScreen() {
         Spacer(modifier = Modifier.height(16.dp))
 
         CourseCard(
-            title = "Funciones",
+            title = "Semana 4",
             progress = 0.5f,
             onClick ={val intent = Intent(context, week4funciones::class.java)
                 context.startActivity(intent)
@@ -131,7 +131,7 @@ private fun MainScreen() {
         Spacer(modifier = Modifier.height(16.dp))
 
         CourseCard(
-            title = "Arreglos",
+            title = "Semana 5",
             progress = 0.7f,
             onClick = {val intent = Intent(context, week5arreglos::class.java)
                 context.startActivity(intent)
